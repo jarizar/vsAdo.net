@@ -1,0 +1,5 @@
+C:\Users\EXTENSION\source\repos\App.Entities\App.Data\bin\Debug\App.Data.dll
+C:\Users\EXTENSION\source\repos\App.Entities\App.Data\bin\Debug\App.Data.pdb
+C:\Users\EXTENSION\source\repos\App.Entities\App.Data\obj\Debug\App.Data.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\source\repos\App.Entities\App.Data\obj\Debug\App.Data.dll
+C:\Users\EXTENSION\source\repos\App.Entities\App.Data\obj\Debug\App.Data.pdb
