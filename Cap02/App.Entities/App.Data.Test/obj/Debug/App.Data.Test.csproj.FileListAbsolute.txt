@@ -40,3 +40,5 @@ C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Dat
 C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data.Test\obj\Debug\App.Data.Test.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data.Test\bin\Debug\Dapper.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data.Test\bin\Debug\Dapper.xml

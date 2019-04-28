@@ -12,3 +12,5 @@ C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Dat
 C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data\obj\Debug\App.Data.csproj.CopyComplete
 C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data\obj\Debug\App.Data.dll
 C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data\obj\Debug\App.Data.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data\bin\Debug\Dapper.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap02\App.Entities\App.Data\bin\Debug\Dapper.xml

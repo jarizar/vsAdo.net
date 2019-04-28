@@ -5,12 +5,12 @@ namespace App.Data.Test
 {
     [TestClass]
 
-    public class ArtistDAUnitTest: BaseConnection
+    public class ArtistTXDistribuidasDAUnitTest : BaseConnection
     {
         [TestMethod]
         public void Count()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
 
             Assert.IsTrue(da.GetCount() > 0);
 
@@ -20,7 +20,7 @@ namespace App.Data.Test
         [TestMethod]
         public void GetAll()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
 
             var listado = da.GetAll();
                 
@@ -30,7 +30,7 @@ namespace App.Data.Test
         [TestMethod]
         public void Get()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
 
             var entity = da.Get(1);
 
@@ -41,7 +41,7 @@ namespace App.Data.Test
         [TestMethod]
         public void GetAllfilter()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
 
             var listado = da.GetAllfilter("Aerosmith");
 
@@ -51,7 +51,7 @@ namespace App.Data.Test
         [TestMethod]
         public void GetAllSP()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
 
             var listado = da.GetAllSP("Aerosmith");
 
@@ -61,7 +61,7 @@ namespace App.Data.Test
         [TestMethod]
         public void InsertSP()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
             var artist = new Artista();
             artist.Name = "Jose Luis Ariza";
 
@@ -73,7 +73,7 @@ namespace App.Data.Test
         [TestMethod]
         public void UpdateSP()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
             var artist = new Artista();
             artist.Name = "Jose Antonio Ariza";
             artist.ArtistID = 282;
@@ -87,9 +87,9 @@ namespace App.Data.Test
         [TestMethod]
         public void DeleteSP()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXDistribuidasDA();
             var artist = new Artista();          
-            artist.ArtistID = 282;
+            artist.ArtistID = 284;
 
             var registrosAfectados = da.delete(artist);
 

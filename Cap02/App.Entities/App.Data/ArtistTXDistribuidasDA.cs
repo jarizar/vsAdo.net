@@ -6,10 +6,11 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace App.Data
 {
-    public class ArtistDA:BaseConnection   
+    public class ArtistTXDistribuidasDA : BaseConnection   
     {
         ///<summary>
         ///Permite obtener la cantidad de registros
@@ -181,18 +182,37 @@ namespace App.Data
         public int Insert(Artista entity)
         {
             var Result = 0;
-            using (IDbConnection cn = new SqlConnection(this.ConnectionString))
+
+            using (var trx = new TransactionScope())
             {
-                cn.Open();
-                IDbCommand cmd = new SqlCommand("usp_InsertArtist");
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(
-                    new SqlParameter("@pName", entity.Name)
-                    );
-                Result = Convert.ToInt32(cmd.ExecuteScalar());
+                try
+                {
+                    using (IDbConnection cn = new SqlConnection(this.ConnectionString))
+                    {
+                        cn.Open();
+
+                        IDbCommand cmd = new SqlCommand("usp_InsertArtist");
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(
+                            new SqlParameter("@pName", entity.Name)
+                            );
+                        Result = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+
+
+                    //Generando una excepción
+                    throw new Exception("Error");
+
+                    //confirma la transacción
+                    trx.Complete();
+                }
+                catch (Exception ex)
+                {
+
+                }
+                return Result;
             }
-            return Result;
         }
 
         public int Update(Artista entity)
@@ -200,20 +220,46 @@ namespace App.Data
             var Result = 0;
             using (IDbConnection cn = new SqlConnection(this.ConnectionString))
             {
-                cn.Open();
-                IDbCommand cmd = new SqlCommand("usp_UpdateArtist");
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(
-                    new SqlParameter("@pName", entity.Name)
-                    );
-                cmd.Parameters.Add(
-                    new SqlParameter("@pId", entity.ArtistID)
-                    );
-                Result = cmd.ExecuteNonQuery();
+
+                //Iniciando el bloque de transacción local
+                var transaccion = cn.BeginTransaction();
+
+                try
+                {
+                    cn.Open();
+                    IDbCommand cmd = new SqlCommand("usp_UpdateArtist");
+                    cmd.Connection = cn;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(
+                        new SqlParameter("@pName", entity.Name)
+                        );
+                    cmd.Parameters.Add(
+                        new SqlParameter("@pId", entity.ArtistID)
+                        );
+                    Result = cmd.ExecuteNonQuery();
+
+                    //Asociando la transacción al objeto command
+                    cmd.Transaction = transaccion;
+
+                    //Generando una excepción
+                    throw new Exception("Error");
+
+
+                    //confirmando la transaccion
+                    transaccion.Commit();
+
+                }
+                catch (Exception ex)
+                {
+                    //Cancelando la transacción con el método Rollback
+                    transaccion.Rollback();
+                }
+
+                return Result;
+
             }
-            return Result;
         }
+
 
         public int delete(Artista entity)
         {
