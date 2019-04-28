@@ -1,0 +1,87 @@
+CREATE PROCEDURE usp_UpdateArtist
+@pId int,
+@pName nvarchar(120)
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	28-05-2019
+ Description:	Actualiza un registro
+ =============================================
+ N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+
+	IF NOT EXISTS(SELECT * FROM Artist WHERE Name=@pName)
+	BEGIN
+	UPDATE Artist SET Name=@pName
+	where ArtistId=@pId
+	END
+
+END
+
+GO
+
+Text
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE usp_InsertArtist
+@pName varchar(120)
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	21-05-2019
+ Description:	inserta un registro y devuelve el ID registrado
+ =============================================
+N°  Date		 User		Description	
+@1  28-05-2019   jariza		Se agrega validación para registro
+=============================================
+*/
+BEGIN
+
+	IF NOT EXISTS(SELECT * FROM Artist WHERE Name=@pName)  --@1 Se agrega validación para registro
+	BEGIN
+	INSERT INTO Artist VALUES(@PName)
+	SELECT SCOPE_IDENTITY()
+	END
+ELSE
+	BEGIN 
+		select 0
+	END
+END
+
+GO
+
+CREATE PROCEDURE usp_GetAll
+(
+@filterByName NVARCHAR(100)
+)
+AS
+BEGIN
+	SELECT * FROM Artist
+	WHERE Name LIKE @filterByName
+END
+
+GO
+
+CREATE PROCEDURE usp_DeleteArtist
+@pId int
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	28-05-2019
+ Description:	Actualiza un registro
+ =============================================
+ N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN	
+	DELETE FROM Artist
+	where ArtistId=@pId	
+END
+
