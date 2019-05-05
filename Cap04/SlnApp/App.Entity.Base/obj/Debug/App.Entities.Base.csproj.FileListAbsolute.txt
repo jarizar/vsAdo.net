@@ -1,0 +1,6 @@
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Entity.Base\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Entity.Base\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Entity.Base\obj\Debug\App.Entities.Base.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Entity.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Entity.Base\obj\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Entity.Base\obj\Debug\App.Entity.Base.pdb

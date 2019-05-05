@@ -1,0 +1,6 @@
+C:\Users\Jose\source\repos\SlnAppTarea\App.EntitiesTD\bin\Debug\App.EntitiesTD.dll
+C:\Users\Jose\source\repos\SlnAppTarea\App.EntitiesTD\bin\Debug\App.EntitiesTD.pdb
+C:\Users\Jose\source\repos\SlnAppTarea\App.EntitiesTD\obj\Debug\App.EntitiesTD.csprojAssemblyReference.cache
+C:\Users\Jose\source\repos\SlnAppTarea\App.EntitiesTD\obj\Debug\App.EntitiesTD.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\SlnAppTarea\App.EntitiesTD\obj\Debug\App.EntitiesTD.dll
+C:\Users\Jose\source\repos\SlnAppTarea\App.EntitiesTD\obj\Debug\App.EntitiesTD.pdb

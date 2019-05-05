@@ -1,0 +1,69 @@
+ALTER PROCEDURE usp_InsertInvoice
+(
+@pCustomerId	int,
+@pInvoiceDate	datetime,
+@pBillingAddress	nvarchar(70),
+@pBillingCity	nvarchar(40),
+@pBillingState	nvarchar(40),
+@pBillingCountry	nvarchar(40),
+@pBillingPostalCode	nvarchar(10),
+@pTotal	numeric(10,2)
+)
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	05-05-2019
+ Description:	inserta un registro en la tabla Invoice y devuelve el ID registrado
+ =============================================
+N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+	
+	INSERT INTO Invoice(
+	CustomerId,InvoiceDate,BillingAddress,BillingCity,
+	BillingState,BillingCountry,BillingPostalCode,Total
+	)
+	VALUES(
+	@pCustomerId,@pInvoiceDate,@pBillingAddress,@pBillingCity,
+	@pBillingState,@pBillingCountry,@pBillingPostalCode,@pTotal
+	)
+
+	SELECT SCOPE_IDENTITY()
+
+END
+
+GO
+
+ALTER PROCEDURE usp_InsertInvoiceLine
+(
+@pInvoiceId	int,
+@pTrackId	int,
+@pUnitPrice	numeric(10,2),
+@pQuantity	int
+)
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	05-05-2019
+ Description:	inserta un registro en la tabla InvoiceLine y devuelve el ID registrado
+ =============================================
+N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+	
+	INSERT INTO InvoiceLine(
+		InvoiceId,TrackId,
+		UnitPrice,Quantity)
+	VALUES(
+		@pInvoiceId,@pTrackId,
+		@pUnitPrice,@pQuantity)
+
+
+END
+
