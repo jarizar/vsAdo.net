@@ -1,0 +1,9 @@
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\bin\Debug\App.DataTD.dll
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\bin\Debug\App.DataTD.pdb
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\bin\Debug\App.EntitiesTD.dll
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\bin\Debug\App.EntitiesTD.pdb
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\obj\Debug\App.DataTD.csprojAssemblyReference.cache
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\obj\Debug\App.DataTD.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\obj\Debug\App.DataTD.csproj.CopyComplete
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\obj\Debug\App.DataTD.dll
+C:\Users\Jose\source\repos\SlnExam\App.DataTD\obj\Debug\App.DataTD.pdb

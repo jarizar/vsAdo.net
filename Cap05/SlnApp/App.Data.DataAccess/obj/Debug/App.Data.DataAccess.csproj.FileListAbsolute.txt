@@ -1,0 +1,60 @@
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\App.Data.DataAccess\bin\Debug\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb

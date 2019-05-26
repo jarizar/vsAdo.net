@@ -1,0 +1,12 @@
+C:\Users\Jose\source\repos\SlnExam\App.Entities.Dapper\bin\Debug\App.Entities.Dapper.dll
+C:\Users\Jose\source\repos\SlnExam\App.Entities.Dapper\bin\Debug\App.Entities.Dapper.pdb
+C:\Users\Jose\source\repos\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.csprojAssemblyReference.cache
+C:\Users\Jose\source\repos\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.dll
+C:\Users\Jose\source\repos\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\SlnExam\App.Entities.Dapper\bin\Debug\App.Entities.Dapper.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\SlnExam\App.Entities.Dapper\bin\Debug\App.Entities.Dapper.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\SlnExam\App.Entities.Dapper\obj\Debug\App.Entities.Dapper.pdb

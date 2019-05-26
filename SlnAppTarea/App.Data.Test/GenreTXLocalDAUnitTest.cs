@@ -53,7 +53,7 @@ namespace App.Data.Test
             var da = new GenreTXLocalDA();
             var genero = new Genre();
 
-            genero.GenreId = 26;
+            genero.GenreId = 32;
 
             var registrosAfectados = da.delete(genero);
 

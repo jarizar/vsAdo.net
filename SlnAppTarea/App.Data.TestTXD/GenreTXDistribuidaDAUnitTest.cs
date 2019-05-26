@@ -12,7 +12,7 @@ namespace App.Data.TestTXD
         {
             var da = new GenreTXDistribuidaDA();
             var genero = new Genre2();
-            genero.Name = "Musica Moderna";
+            genero.Name = "Musica Modern top";
 
             var id = da.Insert(genero);
 
