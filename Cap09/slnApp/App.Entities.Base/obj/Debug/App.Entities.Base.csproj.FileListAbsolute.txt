@@ -22,3 +22,9 @@ C:\Users\EXTENSION\Documents\repositorio\Cap09\slnApp\App.Entities.Base\obj\Debu
 C:\Users\EXTENSION\Documents\repositorio\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
 C:\Users\EXTENSION\Documents\repositorio\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.dll
 C:\Users\EXTENSION\Documents\repositorio\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\bin\Debug\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\bin\Debug\App.Entities.Base.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Debug\App.Entities.Base.pdb

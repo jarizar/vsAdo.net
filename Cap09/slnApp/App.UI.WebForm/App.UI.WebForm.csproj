@@ -49,6 +49,12 @@
     <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AspNet.ScriptManager.bootstrap.4.3.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -133,6 +139,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\Mantenimientos\Track\TrackEdit.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -206,6 +213,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="common\Helpers.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +230,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Mantenimientos\Track\TrackEdit.aspx.cs">
+      <DependentUpon>TrackEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mantenimientos\Track\TrackEdit.aspx.designer.cs">
+      <DependentUpon>TrackEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -274,6 +289,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Data.Repository.Interface\App.Data.Repository.Interface.csproj">
+      <Project>{c021a6ea-af36-4d36-a0bc-1a11660756cd}</Project>
+      <Name>App.Data.Repository.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Data.Repository\App.Data.Repository.csproj">
+      <Project>{668a6ba4-5a86-4877-84da-a02b3fb241b5}</Project>
+      <Name>App.Data.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
+      <Project>{14adc132-fbec-4a49-b9c1-ce33965dd5ea}</Project>
+      <Name>App.Entities.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Entities.Queries\App.Entities.Queries.csproj">
+      <Project>{00cd011b-ca35-4f3d-9be9-3fe084279b99}</Project>
+      <Name>App.Entities.Queries</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
