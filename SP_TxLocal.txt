@@ -1,0 +1,178 @@
+CREATE PROCEDURE  usp_GetAllAlbum ( @pfilterByTitle NVARCHAR(100) )
+AS
+BEGIN  
+SELECT * FROM Album  WHERE Title LIKE @pfilterByTitle
+END 
+
+
+GO
+
+CREATE PROCEDURE usp_InsertAlbum
+@pTitle varchar(160),
+@ArtistId int
+
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	04-05-2019
+ Description:	inserta un registro y devuelve Titulo del Album
+ ============================================
+
+N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+
+	IF NOT EXISTS(SELECT * FROM Album WHERE Title=@pTitle and ArtistId=@ArtistId)  
+	BEGIN
+	INSERT INTO Album VALUES(@pTitle,@ArtistId)
+	SELECT SCOPE_IDENTITY()
+	END
+ELSE
+	BEGIN 
+		select 0
+	END
+END
+
+GO
+
+CREATE PROCEDURE usp_UpdateAlbum
+@pTitle nvarchar(160),
+@pArtistId int,
+@pAlbumId int
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	04-05-2019
+ Description:	Actualiza un registro
+ =============================================
+ N°
+  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+
+	IF NOT EXISTS(SELECT * FROM Album WHERE Title=@pTitle and ArtistId=@pArtistId )
+	BEGIN
+	UPDATE Album SET Title=@pTitle,ArtistId=@pArtistId
+	where AlbumId=@pAlbumId
+	END
+
+END
+
+
+
+GO
+
+CREATE PROCEDURE usp_DeleteAlbum
+@pAlbumId int
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	04-05-2019
+ Description:	Actualiza un registro
+ =============================================
+ N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN	
+	DELETE FROM Album
+	where AlbumId=@pAlbumId	
+END
+
+
+GO
+
+
+CREATE PROCEDURE  usp_GetAllGenre ( @pfilterByName NVARCHAR(100) )
+AS
+BEGIN  
+SELECT * FROM Genre WHERE Name LIKE @pfilterByName
+END 
+
+
+GO
+
+
+CREATE PROCEDURE usp_InsertGenre
+@pName varchar(160)
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	04-05-2019
+ Description:	inserta un registro y devuelve Titulo del Album
+ ============================================
+
+N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+
+	IF NOT EXISTS(SELECT * FROM Genre WHERE Name=@pName)  
+	BEGIN
+	INSERT INTO Genre VALUES(@pName)
+	SELECT SCOPE_IDENTITY()
+	END
+ELSE
+	BEGIN 
+		select 0
+	END
+END
+
+GO
+
+
+
+CREATE PROCEDURE usp_UpdateGenre
+@pGenreId int,
+@pName nvarchar(120)
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	04-05-2019
+ Description:	Actualiza un registro
+ =============================================
+ N°
+  Date		 User		Description	
+
+=============================================
+*/
+BEGIN
+
+	IF NOT EXISTS(SELECT * FROM Genre WHERE Name=@pName )
+	BEGIN
+	UPDATE Genre SET Name=@pName
+	where GenreId=@pGenreId
+	END
+
+END
+
+GO
+
+
+CREATE PROCEDURE usp_DeleteGenre
+@pGenreId int
+AS
+/* 
+=============================================
+ Author:		Jose Luis Ariza
+ Create date:	04-05-2019
+ Description:	Actualiza un registro
+ =============================================
+ N°  Date		 User		Description	
+
+=============================================
+*/
+BEGIN	
+	DELETE FROM Genre
+	where GenreId=@pGenreId	
+END

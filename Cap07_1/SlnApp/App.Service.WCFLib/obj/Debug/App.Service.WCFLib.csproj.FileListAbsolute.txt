@@ -1,0 +1,7 @@
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\bin\Debug\App.Service.WCFLib.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\bin\Debug\App.Service.WCFLib.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\bin\Debug\App.Service.WCFLib.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.pdb

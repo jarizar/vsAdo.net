@@ -1,0 +1,11 @@
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\bin\Release\App.Data.Repository.Interface.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\bin\Release\App.Data.Repository.Interface.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\bin\Release\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\bin\Release\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\bin\Release\App.Entities.Base.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\bin\Release\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\obj\Release\App.Data.Repository.Interface.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\obj\Release\App.Data.Repository.Interface.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\obj\Release\App.Data.Repository.Interface.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\obj\Release\App.Data.Repository.Interface.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Data.Repository.Interface\obj\Release\App.Data.Repository.Interface.pdb

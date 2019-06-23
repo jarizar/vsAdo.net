@@ -1,0 +1,9 @@
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Service.WCFLib.Interfaces.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Service.WCFLib.Interfaces.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Entities.Base.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.pdb

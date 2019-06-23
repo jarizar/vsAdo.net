@@ -1,0 +1,114 @@
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll.config
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.pdb
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.xml
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csprojAssemblyReference.cache
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CopyComplete
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.dll
+C:\Users\Jose\Documents\Visual Studio 2017\Cap04\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap04\SlnApp\DataAccessTest\bin\Debug\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap05\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\obj\Debug\DataAccessTest.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\DataAccessTest.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\App.Entity.Base.pdb
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\EXTENSION\Documents\RepositorioGit\vsAdo.net\Cap07\SlnApp\DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CopyComplete

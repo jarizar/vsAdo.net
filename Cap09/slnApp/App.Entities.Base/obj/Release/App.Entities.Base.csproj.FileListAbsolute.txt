@@ -1,0 +1,6 @@
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\bin\Release\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\bin\Release\App.Entities.Base.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Release\App.Entities.Base.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Release\App.Entities.Base.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Release\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap09\slnApp\App.Entities.Base\obj\Release\App.Entities.Base.pdb
