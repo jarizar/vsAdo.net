@@ -1,7 +1,7 @@
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
-  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs//Content/theme/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs//Content/theme/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery')) :
@@ -70,7 +70,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): util.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs//Content/theme/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
   /**
@@ -4227,7 +4227,7 @@
           }
         } // If boundary is not `scrollParent`, then set position to `static`
         // to allow the menu to "escape" the scroll parent's boundaries
-        // https://github.com/twbs/bootstrap/issues/24251
+        // https://github.com/twbs//Content/theme/bootstrap/issues/24251
 
 
         if (this._config.boundary !== 'scrollParent') {
@@ -5191,7 +5191,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): tools/sanitizer.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs//Content/theme/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
   var uriAttrs = ['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href'];
@@ -6973,7 +6973,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): index.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs//Content/theme/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
 
