@@ -1,0 +1,16 @@
+﻿span[data-val=true]
+{
+   color:red;
+}
+
+.ErrorMensaje
+{
+    color:#d91919;
+    font-size:12px;
+}
+
+.ErrorMensajeConsultar {
+    color: #07225b;
+    font-size: 10px;
+}
+

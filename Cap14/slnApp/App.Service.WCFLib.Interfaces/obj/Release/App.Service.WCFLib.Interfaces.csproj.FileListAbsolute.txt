@@ -1,0 +1,9 @@
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Service.WCFLib.Interfaces.dll
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Service.WCFLib.Interfaces.pdb
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Entities.Base.dll
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\bin\Release\App.Entities.Base.pdb
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.csprojAssemblyReference.cache
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.csproj.CoreCompileInputs.cache
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.csproj.CopyComplete
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.dll
+D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Service.WCFLib.Interfaces\obj\Release\App.Service.WCFLib.Interfaces.pdb
