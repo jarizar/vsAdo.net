@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InvoiceRepository.cs" />
     <Compile Include="AlbumRepository.cs" />
     <Compile Include="AppUnitOfWork.cs" />
     <Compile Include="GenericRepository.cs" />

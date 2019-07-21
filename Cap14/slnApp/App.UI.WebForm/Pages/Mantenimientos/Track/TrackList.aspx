@@ -9,8 +9,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMain" runat="server">
 
 
-    
-
         <div class="box box-primary">
             <div class="box-header">
                 Búsqueda de canciones
@@ -68,7 +66,6 @@
 
             </div>
         </div>
-
 
 
 

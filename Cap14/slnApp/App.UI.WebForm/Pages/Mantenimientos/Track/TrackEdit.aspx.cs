@@ -14,7 +14,6 @@ namespace App.UI.WebForm.Pages.Mantenimientos.Track
 {
     public partial class TrackEdit : System.Web.UI.Page
     {
-
         private ILog _logger = LogManager.GetLogger(typeof(TrackEdit));
 
         protected void Page_Load(object sender, EventArgs e)
@@ -57,20 +56,20 @@ namespace App.UI.WebForm.Pages.Mantenimientos.Track
 
         private void InitValues()
         {
+
             try
             {
                 IAppUnitOfWork uw = new AppUnitOfWork();
 
                 //Configurando el combo de Alubums
-                _logger.Info("Antes de obtener la lista de album");
+                _logger.Info("Anter de obtener la lista de album");
                 var albums = uw.AlbumRepository.GetAll();
                 Helpers.ConfigurarCombo(ddlAlbum, "Title", "AlbumId", albums);
-                _logger.Info($"Despues de obtener la lista de album: Número registros{albums.Count}");
+                _logger.Info($"Despues de obtener la lista de album: Numéro registros {albums.Count}");
 
                 //Configurando el combo de Albums
                 var medios = uw.MediaTypeRepository.GetAll();
                 Helpers.ConfigurarCombo(ddlMedio, "Name", "MediaTypeId", medios);
-              
 
                 //Configurando el combo de Generos
                 var generos = uw.GenreRepository.GetAll();
@@ -78,14 +77,11 @@ namespace App.UI.WebForm.Pages.Mantenimientos.Track
 
                 uw.Dispose(); //Liberando el UW
             }
-            catch (Exception)
+            catch(Exception ex)
             {
-                Exception ex = Server.GetLastError();
-                _logger.Error(ex);
-                throw;
-               
+                _logger.Info("Error al obtener datos iniciales en la pantalla TrackEdit");
+                throw ex;
             }
-            
 
         }
 
@@ -132,6 +128,7 @@ namespace App.UI.WebForm.Pages.Mantenimientos.Track
         //    Exception ex = Server.GetLastError();
 
         //    _logger.Error(ex);
+
         //}
 
 

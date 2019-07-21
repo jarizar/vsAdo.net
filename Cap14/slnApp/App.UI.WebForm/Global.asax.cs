@@ -20,19 +20,16 @@ namespace App.UI.WebForm
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-
             //Aplicando la configuración para el componente log4net
-            //establecido en el archivo  webconfig
+            //establecido en el archivo webconfig
             log4net.Config.XmlConfigurator.Configure();
-
         }
 
-        void Application_Error(object sender, EventArgs e) {
-
+        void Application_Error(object sender, EventArgs e)
+        {
             Exception ex = Server.GetLastError();
+
             _logger.Error(ex);
         }
-
-
     }
 }

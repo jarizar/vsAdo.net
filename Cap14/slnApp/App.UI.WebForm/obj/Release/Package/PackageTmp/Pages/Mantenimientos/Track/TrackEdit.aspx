@@ -7,6 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="contentMain" runat="server">
 
     <div class="form-horizontal">
+
         <asp:HiddenField ID="hdfCodigo" runat="server" />
 
 
@@ -92,8 +93,8 @@
             </div>
             <!-- /.box-footer -->
         </div>
-
     </div>
+
 
 
 </asp:Content>

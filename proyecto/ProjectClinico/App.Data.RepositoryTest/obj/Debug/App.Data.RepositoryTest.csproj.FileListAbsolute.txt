@@ -32,3 +32,37 @@ C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.RepositoryTest\obj\De
 C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.csproj.CopyComplete
 C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.dll
 C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.RepositoryTest.dll.config
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.RepositoryTest.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.RepositoryTest.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.Repository.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.Repository.Interface.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Entities.Queries.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\EntityFramework.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Entities.Base.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.DataAccess.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.Repository.Interface.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.Repository.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.Repository.dll.config
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Entities.Queries.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\EntityFramework.xml
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Entities.Base.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.csprojAssemblyReference.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.csproj.CoreCompileInputs.cache
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.csproj.CopyComplete
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.dll
+C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Data.RepositoryTest\obj\Debug\App.Data.RepositoryTest.pdb

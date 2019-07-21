@@ -13,7 +13,8 @@ namespace App.Data.Repository.Interface
         ITrackRepository TrackRepository { get; set; }
         IGenreRepository GenreRepository { get; set; }
         IMediaTypeRepository MediaTypeRepository { get; set; }
-    
+        IInvoiceRepository InvoiceRepository { get; set; }
+
         int Complete();
     }
 }

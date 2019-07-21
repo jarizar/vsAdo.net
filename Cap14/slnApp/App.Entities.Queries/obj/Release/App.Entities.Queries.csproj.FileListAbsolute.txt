@@ -4,9 +4,9 @@ D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Entities.Queries\obj\Release\
 D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.csproj.CoreCompileInputs.cache
 D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.dll
 D:\VSDeveloper\src\vs2017-2019-03\Cap09\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.pdb
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap11\Cap11\slnApp\App.Entities.Queries\bin\Release\App.Entities.Queries.dll
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap11\Cap11\slnApp\App.Entities.Queries\bin\Release\App.Entities.Queries.pdb
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap11\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.csprojAssemblyReference.cache
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap11\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.csproj.CoreCompileInputs.cache
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap11\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.dll
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap11\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.pdb
+D:\VSDeveloper\src\vs2017-2019-03\Cap11\slnApp\App.Entities.Queries\bin\Release\App.Entities.Queries.dll
+D:\VSDeveloper\src\vs2017-2019-03\Cap11\slnApp\App.Entities.Queries\bin\Release\App.Entities.Queries.pdb
+D:\VSDeveloper\src\vs2017-2019-03\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.csprojAssemblyReference.cache
+D:\VSDeveloper\src\vs2017-2019-03\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.csproj.CoreCompileInputs.cache
+D:\VSDeveloper\src\vs2017-2019-03\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.dll
+D:\VSDeveloper\src\vs2017-2019-03\Cap11\slnApp\App.Entities.Queries\obj\Release\App.Entities.Queries.pdb
