@@ -1,0 +1,6 @@
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Base\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Base\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Base\obj\Debug\App.Entities.Base.csprojAssemblyReference.cache
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Base\obj\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Base\obj\Debug\App.Entities.Base.pdb

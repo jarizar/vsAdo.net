@@ -1,0 +1,9 @@
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csprojAssemblyReference.cache
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CopyComplete

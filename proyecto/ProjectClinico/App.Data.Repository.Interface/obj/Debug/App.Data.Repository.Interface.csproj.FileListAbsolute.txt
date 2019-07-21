@@ -1,0 +1,11 @@
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\bin\Debug\App.Data.Repository.Interface.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\bin\Debug\App.Data.Repository.Interface.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csprojAssemblyReference.cache
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csproj.CopyComplete
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.pdb
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\source\repos\ProjectClinico\App.Data.Repository.Interface\bin\Debug\App.Entities.Queries.pdb
