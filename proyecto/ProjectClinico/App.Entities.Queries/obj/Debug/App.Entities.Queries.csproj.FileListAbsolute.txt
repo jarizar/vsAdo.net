@@ -7,12 +7,12 @@ C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug
 C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.dll
 C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.pdb
 C:\Users\jose antonio\source\repos\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CopyComplete
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Queries.dll
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Queries.pdb
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.dll
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.pdb
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csprojAssemblyReference.cache
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CoreCompileInputs.cache
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CopyComplete
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.dll
-C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\proyecto\ProjectClinico\App.Entities.Queries\obj\Debug\App.Entities.Queries.pdb

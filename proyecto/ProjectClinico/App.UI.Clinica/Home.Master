@@ -18,6 +18,11 @@
 
     <!-- DataTables -->
     <link href="css/datatables/dataTables.bootstrap.css" rel="stylesheet" />
+
+    <!-- sweetalert2 -->
+    <link href="css/sweetalert2.css" rel="stylesheet" />
+    <script src="js/sweetalert2.min.js"></script>
+
     <style>
         html, body {
             min-height: 100%;

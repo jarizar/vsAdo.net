@@ -40,12 +40,12 @@ function addRowDT(data) {
 
     for (var i = 0; i < data.length; i++) {
         tabla.fnAddData([
-            data[i].IdPaciente,
-            data[i].Nombres,
-            (data[i].ApPaterno + " " + data[i].ApMaterno),
-            ((data[i].Sexo == 'M')? "Masculino": "Femenino"),
-            data[i].Edad,
-            data[i].Direccion,
+            data[i].idPaciente,
+            data[i].nombres,
+            (data[i].apPaterno + " " + data[i].apMaterno),
+            ((data[i].sexo == 'M')? "Masculino": "Femenino"),
+            data[i].edad,
+            data[i].direccion,
             '<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-target="#imodal" data-toggle="modal"><i class="fa fa-check-square-o" aria-hidden="true"></i></button>&nbsp;' +
             '<button type="button" value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete"><i class="fa fa-minus-square-o" aria-hidden="true"></i></button>'
            
@@ -65,6 +65,7 @@ function sendDataAjax() {
         },
         success: function (data) {
             addRowDT(data.d);
+            limpiar();
         }
     });
 }
@@ -84,10 +85,14 @@ function updateDataAjax() {
         },
         success: function (response) {
             if (response.d) {
-                alert("Registro actualizado de manera correcta.");
-            } else {
-                alert("No se pudo actualizar el registro.");
+               
+                Swal.fire({ type: 'success', title: 'Registro actualizado de manera correcta!', showConfirmButton: false, timer: 1500 });
+              
+            } else {                
+                Swal.fire({ type: 'Error', title: 'No se pudo actualizar el registro!', showConfirmButton: false, timer: 1500 });
             }
+            // cerrar ventana modal usando jquery
+            $("#imodal").modal('toggle');
         }
     });
 }
@@ -96,23 +101,44 @@ function deleteDataAjax(data) {
 
     var obj = JSON.stringify({ id: JSON.stringify(data) });
 
-    $.ajax({
-        type: "POST",
-        url: "GestionarPaciente.aspx/EliminarDatosPaciente",
-        data: obj,
-        dataType: "json",
-        contentType: 'application/json; charset=utf-8',
-        error: function (xhr, ajaxOptions, thrownError) {
-            console.log(xhr.status + " \n" + xhr.responseText, "\n" + thrownError);
-        },
-        success: function (response) {
-            if (response.d) {
-                alert("Registro eliminado de manera correcta.");
-            } else {
-                alert("No se pudo eliminar el registro.");
-            }
+    Swal.fire({
+        title: 'Desea eliminar Paciente?',       
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, eliminar!'
+    }).then((result) => {
+        if (result.value) {
+            $.ajax({
+                type: "POST",
+                url: "GestionarPaciente.aspx/EliminarDatosPaciente",
+                data: obj,
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log(xhr.status + " \n" + xhr.responseText, "\n" + thrownError);
+                },
+                success: function (response) {
+                    if (response.d) {
+                        //alert("Registro eliminado de manera correcta.");
+                        Swal.fire(
+                            'Eliminado!',
+                            'Paciente eliminado correctamente!.',
+                            'success');
+                        sendDataAjax();
+                    } else {
+                        alert("No se pudo eliminar el registro.");
+                    }
+                }
+            });
         }
     });
+
+
+  
+
+
 }
 
 // evento click para boton actualizar
@@ -120,7 +146,7 @@ $(document).on('click', '.btn-edit', function (e) {
     e.preventDefault();
 
     var row = $(this).parent().parent()[0];
-    data = tabla.fillModalData(row);
+    data = tabla.fnGetData(row);
     fillModalData();
 
 });
@@ -151,8 +177,21 @@ function fillModalData() {
 // enviar la informacion al servidor
 $("#btnactualizar").click(function (e) {
     e.preventDefault();
-    updateDataAjax();
+    updateDataAjax();   
+    sendDataAjax();
+  
 });
 
 // Llamando a la funcion de ajax al cargar el documento
 sendDataAjax();
+
+
+function limpiar() {
+    document.getElementById("txtNroDocumento").value = "";
+    document.getElementById("txtNombres").value = "";
+    document.getElementById("txtApPaterno").value = "";
+    document.getElementById("txtApMaterno").value = "";
+    document.getElementById("txtEdad").value = "";
+    document.getElementById("txtTelefono").value = "";
+    document.getElementById("txtDireccion").value = "";
+}

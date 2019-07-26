@@ -11,6 +11,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/sweetalert2.css" rel="stylesheet" />
+    <script src="js/sweetalert2.min.js"></script>
 </head>
 <body class="bg-black">
     <form id="form1" runat="server">
@@ -21,9 +24,15 @@
                     <div class="body bg-gray">
                         <div class="form-group">
                             <asp:TextBox ID="UserName" runat="server" CssClass="form-control" placeholder="Ingrese usuario..."></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic"
+                            ErrorMessage="El campo es requerido" ControlToValidate="UserName">
+                        </asp:RequiredFieldValidator>
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="Password" runat="server" CssClass="form-control" placeholder="Ingrese clave..." TextMode="Password"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="Dynamic"
+                            ErrorMessage="El campo es requerido" ControlToValidate="Password">
+                        </asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="footer">

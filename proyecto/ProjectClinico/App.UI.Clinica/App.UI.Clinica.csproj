@@ -286,6 +286,8 @@
     <Content Include="css\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="css\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="GestionarHorarioAtencion.aspx" />
+    <Content Include="GestionarPaciente.aspx" />
     <Content Include="GestionarReservaCitas.aspx" />
     <Content Include="img\bootstrap-colorpicker\Thumbs.db" />
     <Content Include="img\credit\Thumbs.db" />
@@ -298,7 +300,9 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Home.Master" />
+    <Content Include="js\sweetalert2.min.js" />
     <Content Include="PanelGeneral.aspx" />
+    <Content Include="MasterError.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
@@ -520,6 +524,20 @@
     <Compile Include="ErrorPage.aspx.designer.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GestionarHorarioAtencion.aspx.cs">
+      <DependentUpon>GestionarHorarioAtencion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionarHorarioAtencion.aspx.designer.cs">
+      <DependentUpon>GestionarHorarioAtencion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarPaciente.aspx.cs">
+      <DependentUpon>GestionarPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionarPaciente.aspx.designer.cs">
+      <DependentUpon>GestionarPaciente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GestionarReservaCitas.aspx.cs">
       <DependentUpon>GestionarReservaCitas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -540,6 +558,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterError.Master.cs">
+      <DependentUpon>MasterError.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterError.Master.designer.cs">
+      <DependentUpon>MasterError.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PanelGeneral.aspx.cs">

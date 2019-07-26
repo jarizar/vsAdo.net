@@ -11,14 +11,14 @@ function initDataTable() {
         "bSort": true,
         "aoColumns": [
             { "bSortable": false },
-            { "bSortable": false },
-            { "bSortable": false },
+            { "bSortable": false },            
             null,
-            null
+            null,
+            
         ]
     });
 
-    tabla.fnSetColumnVis(2, false);
+    //tabla.fnSetColumnVis(2, false);
 }
 
 initDataTable();
@@ -47,7 +47,7 @@ $("#btnBuscar").on("click", function (event) {
                 //console.log("éxito", data);
                 if (data.d !== null) {
                     llenarDatosMedico(data.d);
-                    listHorarios(data.d.IdMedico);
+                    listHorarios(data.d.idMedico);
                 } else {
                     llenarDatosMedicoDefault(data.d);
                 }
@@ -60,9 +60,9 @@ $("#btnBuscar").on("click", function (event) {
 
 function llenarDatosMedico(obj) {
     $("#lblNombres").text(obj.Nombre);
-    $("#lblApellidos").text(obj.ApPaterno.concat(" ".concat(obj.ApMaterno)));
-    $("#lblEspecialidad").text(obj.Especialidad.Descripcion);
-    $("#txtMedico").val(obj.IdMedico);
+    $("#lblApellidos").text(obj.apPaterno.concat(" ".concat(obj.apMaterno)));
+    $("#lblEspecialidad").text(obj.descripcion);
+    $("#txtMedico").val(obj.idMedico);
 }
 
 function llenarDatosMedicoDefault() {
@@ -104,7 +104,11 @@ $("#btnAgregar").on("click", function (event) {
                 //console.log("éxito", data.d);
                 // cerrar ventana modal usando jquery
                 $("#AgregarHorario").modal('toggle');
-                addRow(data.d);
+                //addRow(data.d);
+                tabla.fnClearTable();
+                for (var i = 0; i < data.d.length; i++) {
+                    addRow(data.d[i]);
+                }
             }
         });
 
@@ -119,14 +123,18 @@ $("#btnAgregar").on("click", function (event) {
 
 function addRow(obj) {
 
-    var fecha = moment(obj.Fecha).toDate();
+    var fecha = moment(obj.fecha).toDate();
+    
 
     tabla.fnAddData(
         ['<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-target="#imodal" data-toggle="modal"><i class="fa fa-check-square-o" aria-hidden="true"></i></button>&nbsp;',
           '<button type="button" value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete"><i class="fa fa-minus-square-o" aria-hidden="true"></i></button>',
-          obj.IdHorarioAtencion,
-          fecha.format("dd/MM/yyyy"),
-          obj.Hora.hora
+           
+            
+            fecha.format("dd/MM/yyyy"),
+            obj.hora,
+            obj.idHorarioAtencion
+         
         ]
     );
 }
@@ -190,9 +198,9 @@ $(document).on('click', '.btn-edit', function (e) {
 });
 
 function llenarDatosHorario(data) {
-    $("#txtEditarFecha").val(data[3]);
-    $("#txtEditarHora").val(data[4]);
-    $("#txtIdHorario").val(data[2]);
+    $("#txtEditarFecha").val(data[2]);
+    $("#txtEditarHora").val(data[3]);
+    $("#txtIdHorario").val(data[4]);
 }
 
 $("#btnEditar").click(function (e) {

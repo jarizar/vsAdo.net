@@ -36,13 +36,13 @@ namespace App.UI.Clinica
                     SessionManager _SessionManager = new SessionManager(Session);                    
                     _SessionManager.UserSessionEmpleado = objEmpleado;
                     FormsAuthentication.RedirectFromLoginPage(LoginUser.UserName, false);
+                    uw.Dispose();
+                 
                 }
                 else
-                {
-                    Response.Write("<script>alert('Usuario o Contraseña incorrecto!')</script>");
-                    ////Response.Write("<script>(function(){ swal({title: 'Boton 2!', text: 'Esta es la opcion 2', type: 'warning', showConfirmButton: false, timer: 1000})  })();     </script> ");
-
-                    //ClientScript.RegisterStartupScript(GetType(), "MostrarMensaje", "alerta();", true);
+                {                    
+                    
+                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({  type: 'error',  title: 'Usuario o Contraseña incorrecto!',  showConfirmButton: false,  timer: 1500})", true);
                 }
 
 

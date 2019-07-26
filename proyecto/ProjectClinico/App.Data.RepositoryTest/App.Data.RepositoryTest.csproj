@@ -73,6 +73,10 @@
       <Project>{92F27ACB-F3A9-4BEA-B77F-CEA2E6BBAA2F}</Project>
       <Name>App.Data.Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\App.Entities.Base\App.Entities.Base.csproj">
+      <Project>{CDDCB426-8805-497A-850F-37A1F2C2E7BA}</Project>
+      <Name>App.Entities.Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\App.Entities.Queries\App.Entities.Queries.csproj">
       <Project>{E0A65150-D189-48C1-8FCA-3697733478E6}</Project>
       <Name>App.Entities.Queries</Name>

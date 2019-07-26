@@ -28,6 +28,8 @@ namespace App.UI.Clinica
                 IAppUnitOfWork uw = new AppUnitOfWork();
                 var especialidades = uw.EspecialidadRespository.GetAll();
                 Helpers.ConfigurarCombo(ddlEspecialidad,"Descripcion", "IdEspecialidad", especialidades);
+          
+            uw.Dispose();
 
         }
 
@@ -37,7 +39,9 @@ namespace App.UI.Clinica
            
             IAppUnitOfWork uw = new AppUnitOfWork();
             return uw.PacienteRepository.BuscarDni(dni);
-            
+           
+            uw.Dispose();
+
         }
 
         protected void btnBuscarHorario_Click(object sender, EventArgs e)
@@ -61,12 +65,18 @@ namespace App.UI.Clinica
 
                 if (response)
                 {
-                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "<script>alert('Cita registrada correctamente.')</script>", false);
+                    //ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "<script>alert('Cita registrada correctamente.')</script>", false);
+                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({ type: 'success',  title: 'Cita registrada correctamente!',  showConfirmButton: false,  timer: 1500})", true);
                 }
                 else
                 {
-                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "<script>alert('Error al registrar la cita.')</script>", false);
+                    //ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "<script>alert('Error al registrar la cita.')</script>", false);
+                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({ type: 'Error',  title: 'Error al registrar la cita',  showConfirmButton: false,  timer: 1500})", true);
                 }
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({ type: 'error',  title: 'Seleccione hora de cita!',  showConfirmButton: false,  timer: 1500})", true);
             }
         }
 
@@ -76,22 +86,35 @@ namespace App.UI.Clinica
 
             if (txtFechaAtencion.Text.Equals(string.Empty))
             {
-                Response.Write("<script>alert('No ha ingresado una fecha valida')</script>");
+                //Response.Write("<script>alert('No ha ingresado una fecha valida')</script>");
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({  type: 'error',  title: 'No ha ingresado una fecha valida!',  showConfirmButton: false,  timer: 1500})", true);
                 return;
             }
+           
+                // obtenemos fecha
+                String fecha = txtFechaAtencion.Text;
+                DateTime fechaBusqueda = Convert.ToDateTime(fecha);
 
-            // obtenemos fecha
-            String fecha = txtFechaAtencion.Text;
-            DateTime fechaBusqueda = Convert.ToDateTime(fecha);
-
-            // obtenemos el idEspecialidad
-            Int32 idEspecialidad = Convert.ToInt32(ddlEspecialidad.SelectedValue);
+                // obtenemos el idEspecialidad
+                Int32 idEspecialidad = Convert.ToInt32(ddlEspecialidad.SelectedValue);
 
 
-            IAppUnitOfWork uw = new AppUnitOfWork();
-            var Lista = uw.HorarioAtencionRepository.ListarHorario(idEspecialidad, fechaBusqueda);
-            grdHorariosAtencion.DataSource = Lista;
-            grdHorariosAtencion.DataBind();
+                IAppUnitOfWork uw = new AppUnitOfWork();
+                var Lista = uw.HorarioAtencionRepository.ListarHorario(idEspecialidad, fechaBusqueda);
+            if (Lista.Count==0)
+            {               
+
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({  type: 'error',  title: 'No hay programacion de citas',  showConfirmButton: false,  timer: 1500})", true);
+               
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "Alerta", "Swal.fire({  type: 'success',  title: 'Programacion encontrada!',  showConfirmButton: false,  timer: 1500})", true);
+                grdHorariosAtencion.DataSource = Lista;
+                grdHorariosAtencion.DataBind();
+                uw.Dispose();
+            }
+                
         }
 
 
@@ -105,7 +128,10 @@ namespace App.UI.Clinica
                 {
                     return true;
                 }
+
             }
+
+
             return false;
         }
 
@@ -120,7 +146,7 @@ namespace App.UI.Clinica
                 if (chkHorario.Checked)
                 {
                     objCita.hora = (row.FindControl("lblHora") as Label).Text;
-                    objCita.fechaReserva = DateTime.Now;                  
+                    objCita.fechaReserva = DateTime.Now;
                     objCita.idPaciente = Convert.ToInt32(idPaciente.Value);
 
                     string idMedico = (row.FindControl("hfIdMedico") as HiddenField).Value;
@@ -129,6 +155,7 @@ namespace App.UI.Clinica
 
                     break;
                 }
+               
             }
             return objCita;
         }

@@ -18,6 +18,37 @@ namespace App.Data.Repository
 
         }
 
+        public bool ActualizarPaciente(Paciente dato)
+        {
+            var result = false;
+
+            using (var db = new DBModel())
+            {
+                db.Paciente.Attach(dato);
+                db.Entry(dato).Property(x => x.direccion).IsModified = true;   
+                db.SaveChanges();
+                result = true;
+            }
+            
+            return result;
+        }
+
+        public bool EliminarPaciente(Paciente dato)
+        {
+            var result = false;
+
+            using (var db = new DBModel())
+            {
+                db.Paciente.Attach(dato);
+                db.Entry(dato).Property(x => x.estado).IsModified = true;
+                db.SaveChanges();
+                result = true;
+            }
+
+            return result;
+        }
+
+
         public Paciente BuscarDni(string dni)
         {
             var query = new Paciente();
@@ -29,5 +60,17 @@ namespace App.Data.Repository
 
             return query;
         }
+
+        public List<Paciente> ListarPacientes()
+        {
+            List<Paciente> lista=null;
+
+            using (var db = new DBModel())
+            {
+                lista = db.Paciente.Where(x => x.estado == true).ToList();
+            }
+            return lista;
+
+            }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ErrorPage.aspx.cs" Inherits="App.UI.Clinica.ErrorPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterError.Master" CodeBehind="ErrorPage.aspx.cs" Inherits="App.UI.Clinica.ErrorPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

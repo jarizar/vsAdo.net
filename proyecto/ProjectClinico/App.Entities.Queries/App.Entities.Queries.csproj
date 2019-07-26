@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="EmpleadoQuery.cs" />
     <Compile Include="HorarioAtencionQuery.cs" />
+    <Compile Include="MedicoQuery.cs" />
     <Compile Include="MenuQuery.cs" />
     <Compile Include="PermisoQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
