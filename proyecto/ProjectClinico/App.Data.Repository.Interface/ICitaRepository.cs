@@ -9,5 +9,8 @@ namespace App.Data.Repository.Interface
 {
     public interface ICitaRepository : IGenericRepository<Cita>
     {
+        bool ActualizarCita(Cita dato);
     }
+
+    
 }
