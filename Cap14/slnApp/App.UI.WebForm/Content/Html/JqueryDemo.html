@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="../theme/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+
+</head>
+<body>
+
+    <form>
+
+        <div>
+            <label>Nombre</label>
+            <input type="text" id="nombre" />
+        </div>
+
+        <div>
+            <label>Apellidos</label>
+            <input type="text" id="apellidos" />
+        </div>
+
+        <div>
+            <label>Direccion</label>
+            <input type="text" id="direccion" />
+        </div>
+
+        <div>
+            <label>Lenguaje preferido:</label>
+            <select id="lenguajes">
+                <option value="VB">Visual Basic</option>
+                <option value="CSharp">C#</option>
+                <option value="Java">Java</option>
+            </select>
+        </div>
+
+            <button type="button" id="Grabar">Grabar</button>
+
+    </form>
+
+
+
+</body>
+</html>
+
+<script type="text/javascript" >
+
+    $(document).ready(init);
+
+    function init() {
+        $("#Grabar").on("click", grabar);
+    }
+
+    function grabar() {
+
+        var persona = {};
+        persona.nombre = $("#nombre").val();
+        persona.apellidos = $("#apellidos").val();
+        persona.direccion = $("#direccion").val();
+        persona.lenguajes = $("#lenguajes").val();
+
+        var personaString = JSON.stringify(persona);
+
+
+        alert(personaString);
+    }
+
+</script>

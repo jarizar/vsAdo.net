@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+    <form id="registroDatos">
+        <input v-model="nombres" />
+        <input v-model="apellidos" />
+        <button type="button" v-on:click="agregar">Agregar</button>
+        <table>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+            </tr>
+            <tr v-for="item in items">
+                <td>{{item.nombres}}</td>
+                <td>{{item.apellidos}}</td>
+            </tr>
+
+        </table>
+
+        <button type="button"
+                v-on:click="guardar">
+            Guardar
+        </button>
+    </form>
+
+    <script type="text/javascript">
+        var regForm = new Vue(
+            {
+                el: "#registroDatos",
+                data:
+                {
+                    nombres: "",
+                    apellidos: "",
+                    items:[]
+                },
+                methods:
+                {
+                    guardar: function () {
+                        alert(this.nombres);
+                    },
+                    agregar: function () {
+                        this.items.push({
+                            nombres: this.nombres,
+                            apellidos:this.apellidos
+                        });
+                    }
+                }
+            }
+        );
+
+
+    </script>
+
+</body>
+</html>

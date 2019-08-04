@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="../template/js/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><button type="button" class="numero" value="1">1</button></td>
+            <td><button type="button" class="numero" value="2">2</button></td>
+            <td><button type="button" class="numero" value="3">4</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="numero" value="4">4</button></td>
+            <td><button type="button" class="numero" value="5">5</button></td>
+            <td><button type="button" class="numero" value="6">6</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="numero" value="7">7</button></td>
+            <td><button type="button" class="numero" value="8">8</button></td>
+            <td><button type="button" class="numero" value="9">9</button></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button id="limpiar" type="button">Limpiar</button>
+            </td>
+        </tr>
+    </table>
+    <input id="clave" type="password" placeholder="Ingrese la clave" readonly />
+
+    <script type="text/javascript">
+        //Se establecen los valores iniciales en la página
+        //luego cargar el html
+        $(document).ready(configInit);
+
+        function configInit() {
+            $(".numero").on("click", establecerClave);
+            $("#limpiar").on("click", limpiar);
+        }
+
+
+        function establecerClave() {
+            var valor = $(this).val();
+            var claveDig = $("#clave").val();
+            $("#clave").val(claveDig + valor);            
+        }
+
+        function limpiar() {
+            $("#clave").val("");
+        }
+
+    </script>
+
+</body>
+</html>
