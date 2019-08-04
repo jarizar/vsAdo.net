@@ -1,9 +1,11 @@
 ﻿using App.Data.DataAccess;
 using App.Data.Repository.Interface;
 using App.Entities.Base;
+using App.Entities.Queries;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +33,27 @@ namespace App.Data.Repository
 
             return result;
         }
+
+        public List<CitaQuery> ListarCita()
+        {
+
+            return _context.Database.SqlQuery<CitaQuery>(
+                "spListarCitas").ToList();
+
+        }
+        public PacienteQuery BuscarPacienteIdCita(int idcita)
+        {
+
+
+            return _context.Database.SqlQuery<PacienteQuery>(
+                "spBuscarPacienteIdCita @prmIdCita",
+                new SqlParameter("@prmIdCita", idcita)
+                ).FirstOrDefault();
+
+
+        }
+
+
 
     }
 }

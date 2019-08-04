@@ -21,18 +21,18 @@
                         </td>
                         <td>
                             <strong>&nbsp;&nbsp;ID Cita:</strong>
-                            <asp:Label ID="lblIdCita" runat="server" Text='<%#Eval("IdCita") %>' Font-Size="Medium"></asp:Label><br />
-                            <asp:HiddenField ID="hdIdCita" runat="server" Value='<%#Eval("IdCita") %>' Visible="false" />
+                            <asp:Label ID="lblIdCita" runat="server" Text='<%#Eval("idCita") %>' Font-Size="Medium"></asp:Label><br />
+                            <asp:HiddenField ID="hdIdCita" runat="server" Value='<%#Eval("idCita") %>' Visible="false" />
                             <strong>&nbsp;&nbsp;Nombres:</strong>
-                            <asp:Label ID="lblNombres" runat="server" Text='<%#Eval("Paciente.Nombres") %>' Font-Size="Medium"></asp:Label><br />
+                            <asp:Label ID="lblNombres" runat="server" Text='<%#Eval("nombres") %>' Font-Size="Medium"></asp:Label><br />
                             <strong>&nbsp;&nbsp;Apellido Paterno:</strong>
-                            <asp:Label ID="lblApellidoPaterno" runat="server" Text='<%#Eval("Paciente.ApPaterno") %>' Font-Size="Medium"></asp:Label><br />
+                            <asp:Label ID="lblApellidoPaterno" runat="server" Text='<%#Eval("apPaterno") %>' Font-Size="Medium"></asp:Label><br />
                             <strong>&nbsp;&nbsp;Apellido Materno:</strong>
-                            <asp:Label ID="lblApellidoMaterno" runat="server" Text='<%#Eval("Paciente.ApMaterno") %>' Font-Size="Medium"></asp:Label><br />
+                            <asp:Label ID="lblApellidoMaterno" runat="server" Text='<%#Eval("apMaterno") %>' Font-Size="Medium"></asp:Label><br />
                             <strong>&nbsp;&nbsp;Edad:</strong>
-                            <asp:Label ID="lblEdad" runat="server" Text='<%#Eval("Paciente.Edad") %>' Font-Size="Medium"></asp:Label><br />
+                            <asp:Label ID="lblEdad" runat="server" Text='<%#Eval("edad") %>' Font-Size="Medium"></asp:Label><br />
                             <strong>&nbsp;&nbsp;Sexo:</strong>
-                            <asp:Label ID="lblSexo" runat="server" Text='<%#(Eval("Paciente.Sexo").ToString() == "M"?"Masculino":"Femenino") %>'></asp:Label>
+                            <asp:Label ID="lblSexo" runat="server" Text='<%#(Eval("sexo").ToString() == "M"?"Masculino":"Femenino") %>'></asp:Label>
                             <br />
                         </td>
                     </tr>
@@ -45,7 +45,7 @@
                     <tr>
                         <td>
                             <label>&nbsp;&nbsp;&nbsp;Hora de Atención: </label>
-                            <asp:Label ID="lblHora" runat="server" Text='<%#Eval("Hora") %>'></asp:Label>
+                            <asp:Label ID="lblHora" runat="server" Text='<%#Eval("hora") %>'></asp:Label>
                         </td>
                     </tr>
                 </table>

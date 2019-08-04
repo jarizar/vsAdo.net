@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiagnosticoQuery.cs" />
     <Compile Include="EmpleadoQuery.cs" />
     <Compile Include="HorarioAtencionQuery.cs" />
     <Compile Include="MedicoQuery.cs" />
     <Compile Include="MenuQuery.cs" />
+    <Compile Include="CitaQuery.cs" />
+    <Compile Include="PacienteQuery.cs" />
     <Compile Include="PermisoQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

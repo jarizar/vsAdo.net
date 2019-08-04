@@ -1,11 +1,8 @@
 ﻿using App.Data.Repository.Interface;
 using App.Entities.Base;
-using System;
-using System.Collections.Generic;
+using App.Entities.Queries;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace App.Data.Repository
 {
@@ -13,6 +10,31 @@ namespace App.Data.Repository
     {
         public DiagnosticoRepository(DbContext context) : base(context)
         {
+            
+           
+        }
+
+        public bool RegistrarDiagnostico(DiagnosticoQuery objDiagnostico)
+        {
+            var query = false;
+           
+
+            try
+            {
+                _context.Database.SqlQuery<DiagnosticoQuery>(
+            "spRegistrarDiagnostico @prmIdPaciente , @prmObservacion",
+            new SqlParameter("@prmIdEmpleado", objDiagnostico.idPaciente));
+                new SqlParameter("@prmObservacion", objDiagnostico.observacion);
+ ;
+                query = true;
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+
+            return query;
 
         }
 

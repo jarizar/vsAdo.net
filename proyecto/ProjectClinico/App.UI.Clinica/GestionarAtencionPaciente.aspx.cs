@@ -1,6 +1,7 @@
 ﻿using App.Data.Repository;
 using App.Data.Repository.Interface;
 using App.Entities.Base;
+using App.Entities.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace App.UI.Clinica
         private void llenarDataList()
         {
             IAppUnitOfWork uw = new AppUnitOfWork();
-            List<Cita> ListaCitas = uw.CitaRepository.GetAll();
+            var ListaCitas = uw.CitaRepository.ListarCita();
             dlAtencionMedica.DataSource = ListaCitas;
             dlAtencionMedica.DataBind();
         }
