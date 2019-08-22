@@ -110,3 +110,19 @@ C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAcc
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb

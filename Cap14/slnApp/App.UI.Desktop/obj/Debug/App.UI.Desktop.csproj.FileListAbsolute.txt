@@ -161,3 +161,31 @@ D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.D
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.csproj.CopyComplete
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.exe
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.UI.Desktop.exe.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.UI.Desktop.exe
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.UI.Desktop.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.DataAccess.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.Repository.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.Repository.Interface.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\EntityFramework.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.Repository.Interface.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.Repository.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Data.Repository.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\EntityFramework.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.frmReporteTracks.resources
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.MDIPrincipal.resources
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.Properties.Resources.resources
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.csproj.GenerateResource.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.exe
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.UI.Desktop\obj\Debug\App.UI.Desktop.pdb

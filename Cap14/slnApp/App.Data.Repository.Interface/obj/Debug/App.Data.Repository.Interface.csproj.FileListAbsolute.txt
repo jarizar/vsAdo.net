@@ -64,3 +64,14 @@ C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Reposit
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csproj.CopyComplete
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.dll
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\bin\Debug\App.Data.Repository.Interface.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\bin\Debug\App.Data.Repository.Interface.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.Repository.Interface\obj\Debug\App.Data.Repository.Interface.pdb

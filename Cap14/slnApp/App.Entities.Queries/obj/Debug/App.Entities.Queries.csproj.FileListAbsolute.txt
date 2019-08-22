@@ -34,3 +34,9 @@ C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Que
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CoreCompileInputs.cache
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.dll
 C:\Users\EXTENSION\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Entities.Queries\obj\Debug\App.Entities.Queries.pdb

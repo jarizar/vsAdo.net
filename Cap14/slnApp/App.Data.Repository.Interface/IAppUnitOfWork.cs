@@ -15,6 +15,8 @@ namespace App.Data.Repository.Interface
         IMediaTypeRepository MediaTypeRepository { get; set; }
         IInvoiceRepository InvoiceRepository { get; set; }
 
+        IUsuarioRepository UsuarioRepository { get; set; }
+
         int Complete();
     }
 }

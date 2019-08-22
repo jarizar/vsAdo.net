@@ -114,3 +114,32 @@ D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.csproj.CopyComplete
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.dll
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFHost.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFHost.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFHost.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFLib.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFLib.Interfaces.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\EntityFramework.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.Repository.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.Repository.Interface.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.DataAccess.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFLib.Interfaces.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFLib.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Service.WCFLib.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\EntityFramework.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.Repository.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.Repository.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.Repository.Interface.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.DataAccess.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\bin\App.Data.DataAccess.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFHost\obj\Debug\App.Service.WCFHost.pdb

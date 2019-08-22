@@ -34,3 +34,12 @@ D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.csproj.CopyComplete
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.dll
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\bin\Debug\App.Service.WCFLib.Interfaces.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\bin\Debug\App.Service.WCFLib.Interfaces.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Service.WCFLib.Interfaces\obj\Debug\App.Service.WCFLib.Interfaces.pdb

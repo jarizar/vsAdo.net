@@ -23,6 +23,7 @@ namespace App.Data.Repository
             this.GenreRepository = new GenreRepository(_context);
             this.MediaTypeRepository = new MediaTypeRepository(_context);
             this.InvoiceRepository = new InvoiceRepository(_context);
+            this.UsuarioRepository = new UsuarioRepository(_context);
         }
 
         public IArtistRepository ArtistRepository { get; set; }
@@ -31,6 +32,7 @@ namespace App.Data.Repository
         public IGenreRepository GenreRepository { get; set; }
         public IMediaTypeRepository MediaTypeRepository { get; set; }
         public IInvoiceRepository InvoiceRepository { get; set; }
+        public IUsuarioRepository UsuarioRepository { get; set; }
 
         public int Complete()
         {

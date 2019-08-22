@@ -172,3 +172,32 @@ D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CopyComplete
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.dll
 D:\VSDeveloper\src\vs2017-2019-03\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Data.DataAccessTest.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Data.DataAccessTest.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Data.DataAccessTest.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Data.DataAccess.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Entities.Queries.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\EntityFramework.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\App.Entities.Queries.pdb
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\EntityFramework.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.csprojAssemblyReference.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.csproj.CopyComplete
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.dll
+C:\Users\jose antonio\Documents\repositorio\vsAdo.net\Cap14\slnApp\App.Data.DataAccessTest\obj\Debug\App.Data.DataAccessTest.pdb
