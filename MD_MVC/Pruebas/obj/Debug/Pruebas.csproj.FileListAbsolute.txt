@@ -1,0 +1,16 @@
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\obj\Debug\Pruebas.csprojAssemblyReference.cache
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\Pruebas.exe.config
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\Pruebas.exe
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\Pruebas.pdb
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\EntityFramework.dll
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\RepositorioGenerico.dll
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\EntityFramework.xml
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\obj\Debug\Pruebas.csproj.CopyComplete
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\obj\Debug\Pruebas.exe
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\obj\Debug\Pruebas.pdb
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\Modelos.dll
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\Modelos.pdb
+C:\Users\jose antonio\source\repos\MD_MVC\Pruebas\bin\Debug\Modelos.dll.config
