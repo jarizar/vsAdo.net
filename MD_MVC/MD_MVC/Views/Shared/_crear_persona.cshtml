@@ -1,0 +1,211 @@
+﻿@model List<Modelos.v_Persona>
+<div class="modal fade" id="ModalPersona">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Crear Persona</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>Documento:</label>
+                        <input type="text" name="Documento" id="Documento" value="" class="form-control" />
+                    </div>
+                    <div class="col-md-4">
+                        <label>Nombre:</label>
+                        <input type="text" name="nombres" id="nombres" value="" class="form-control" />
+                    </div>
+                    <div class="col-md-5">
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>Tipo:</label><br />
+                        <select name="txt_tipo" id="txt_tipo" class="form-control"></select>
+                    </div>
+                    <div class="col-md-9">
+                        <label>Estatus:</label><br />
+                        <select name="txt_estatus" id="txt_estatus" class="form-control"></select>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="id_table_personas" class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Documento</th>
+                                    <th>Nombre Completo</th>
+                                    <th>Tipo</th>
+                                    <th>Estatus</th>
+                                    <th>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var persona in Model)
+                                {
+                                    <tr>
+                                        <td>@persona.Id</td>
+                                        <td class="editPersona" id="@persona.Id" data-propertyname="Documento">@persona.Documento</td>
+                                        <td>@persona.Nombre_Completo</td>
+                                        <td class="editPersona-Tipo" id="@persona.Id" data-propertyname="Id_Persona_Tipo">@persona.Tipo_Persona</td>
+                                        <td class="editPersona-Estatus" id="@persona.Id" data-propertyname="Id_Estatus">@persona.Estatus_Descripcion</td>
+                                        <td class="uk-text-right editPersona" id="@persona.Id" data-propertyname="Balance">@persona.Balance</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button id="btn_agregar_persona" type="button" class="btn btn-primary">Insertar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#btn_agregar_persona").click(function (event) {
+            //Validamos algunos datos
+            if (DatosValidos()) {
+                //Preguntamos si desea continuar
+                swal({ title: "Desea continuar?", type: "question", animation: false, showCancelButton: true, customClass: "animated zoomIn"}).then((result) => {
+                    if (result.value) {
+                        //Realizamos la inserción a la DB
+                        var datos = { documento: $("#Documento").val(), nombres: $("#nombres").val(), apellidos: $("#apellidos").val(), tipo: $("#txt_tipo").val(), estatus: $("#txt_estatus").val() };
+                        $.ajax({
+                            url: "/Home/GuardarPersona",
+                            method: "POST",
+                            data: datos,
+                            success: function (result) {
+                                if (result.resultado) {
+                                    //Limpiamos el formulario para cargar los nuevos datos
+                                    window.location.href = "";
+                                }
+                                else {
+                                    swal("Error", "Error al insertar registro", "error");
+                                }
+                            },
+                            error: function () {
+                                swal("Error", "Error en la petición al servidor", "error");
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        //Datos de Condiciones de venta
+        var datos = @Html.Action("TipoDePersona");
+        $("#txt_tipo").select2({
+            placeholder: "Seleccione",
+            data: datos,
+        });
+        $("#txt_tipo").val("").trigger("change");
+
+        //Datos de Condiciones de venta
+        var datos = @Html.Action("Estatus");
+        $("#txt_estatus").select2({
+            placeholder: "Seleccione",
+            data: datos,
+        });
+        $("#txt_estatus").val("").trigger("change");
+
+        //Aplicamos el DataTable
+        var tablaPersonas=$("#id_table_personas").dataTable();
+
+        //Habilitamos la edición en línea
+        tablaPersonas.$(".editPersona").editable("/Home/ActualizarPersona", {
+            submitdata: function () {
+                return {
+                    PropertyName: $(this).data("propertyname")
+                }
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+        tablaPersonas.$(".editPersona-Tipo").editable("/Home/ActualizarPersona", {
+            data: @Html.Action("Tipos_PersonaJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+        tablaPersonas.$(".editPersona-Estatus").editable("/Home/ActualizarPersona", {
+            data: @Html.Action("EstatusJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+    })
+
+    function DatosValidos() {
+        var resultado = false;
+        if ($("#Documento").val() == "") {
+            swal({title: "El documento es obligatorio",type: "info", animation: false, customClass: 'animated zoomIn'});
+            $("#Documento").focus();
+            return resultado;
+        }
+        if ($("#nombre").val() == "") {
+            swal({ title: "El nombre es obligatorio", type: "info", animation: false, customClass: 'animated zoomIn' });
+            $("#nombre").focus();
+            return resultado;
+        }
+        if ($("#txt_tipo").val() == null) {
+            swal({ title: "El tipo es requerido", type: "info", animation: false, customClass: 'animated zoomIn' });
+            $("#txt_tipo").focus();
+            return resultado;
+        }
+        if ($("#txt_estatus").val() == null) {
+            swal({ title: "El estatus es requerido", type: "info", animation: false, customClass: 'animated zoomIn' });
+            $("#txt_estatus").focus();
+            return resultado;
+        }
+        return true;
+    }
+</script>

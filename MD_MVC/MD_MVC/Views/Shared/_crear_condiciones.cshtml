@@ -1,0 +1,106 @@
+﻿@model List<Modelos.Condiciones>
+<div class="modal fade" id="ModalCondiciones">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Crear Condiciones de Orden</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Descripción:</label>
+                        <input type="text" name="descripcion_condicion" id="descripcion_condicion" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="id_table_condiciones" class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var condicion in Model)
+                                {
+                                    <tr>
+                                        <td>@condicion.Id</td>
+                                        <td class="editCondiciones" id="@condicion.Id" data-propertyname="Descripcion">@condicion.Descripcion</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button id="btn_agregar_condiones" type="button" class="btn btn-primary">Insertar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#btn_agregar_condiones").click(function (event) {
+            //Validamos algunos datos
+            if ($("#descripcion_condicion").val() == "") {
+                swal({ title: "La descripción es obligatoria", type: "info", animation: false, customClass: 'animated zoomIn' });
+                $("#descripcion_condicion").focus();
+                return resultado;
+            }
+
+            //Preguntamos si desea continuar
+            swal({ title: "Desea continuar?", type: "question", animation: false, showCancelButton: true, customClass: "animated zoomIn" }).then((result) => {
+                if (result.value) {
+                    //Realizamos la inserción a la DB
+                    var datos = { descripcion: $("#descripcion_condicion").val() };
+                    $.ajax({
+                        url: "/Home/GuardarCondicion",
+                        method: "POST",
+                        data: datos,
+                        success: function (result) {
+                            if (result.resultado) {
+                                //Limpiamos el formulario para cargar los nuevos datos
+                                window.location.href = "";
+                            }
+                            else {
+                                swal("Error", "Error al insertar registro", "error");
+                            }
+                        },
+                        error: function () {
+                            swal("Error", "Error en la petición al servidor", "error");
+                        }
+                    });
+                }
+            });
+        });
+
+        //Aplicamos el DataTable
+       var tablaCondiciones= $("#id_table_condiciones").dataTable();
+
+        //Habilitamos la edición en línea
+        tablaCondiciones.$(".editCondiciones").editable("/Home/ActualizarCondiciones", {
+            submitdata: function () {
+                return {
+                    PropertyName: $(this).data("propertyname")
+                }
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+    })
+</script>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MD_MVCDataSet" targetNamespace="http://tempuri.org/MD_MVCDataSet.xsd" xmlns:mstns="http://tempuri.org/MD_MVCDataSet.xsd" xmlns="http://tempuri.org/MD_MVCDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-T74P6CB;Initial Catalog=MD_MVC;User ID=sa;Password=123456;MultipleActiveResultSets=True;Application Name=EntityFramework" IsAppSettingsProperty="false" Modifier="Assembly" Name="MD_MVCEntities (MD_MVC)" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_Orden_CompletaTableAdapter" GeneratorDataComponentClassName="v_Orden_CompletaTableAdapter" Name="v_Orden_Completa" UserDataComponentName="v_Orden_CompletaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MD_MVCEntities (MD_MVC)" DbObjectName="MD_MVC.Orden.v_Orden_Completa" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Orden_Id, Fecha, Id_Persona, Nombre_Completo, Persona_Tipo_descripcion, Id_Tipo, Tipo_de_orden_descripcion, Id_Condiciones, Condiciones_Descripcion, Subtotal, Descuento, Recargo, Impuestos, Total, Id_Estatus, Estatus_Descripcion, SecuenciaEditable, IdEditable, Secuencia_Gobierno, Comentario, Id_Producto, Detalles_Descripcion, Cantidad, Precio, Impuesto, Monto FROM Orden.v_Orden_Completa</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Orden_Id" DataSetColumn="Orden_Id" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Id_Persona" DataSetColumn="Id_Persona" />
+              <Mapping SourceColumn="Nombre_Completo" DataSetColumn="Nombre_Completo" />
+              <Mapping SourceColumn="Persona_Tipo_descripcion" DataSetColumn="Persona_Tipo_descripcion" />
+              <Mapping SourceColumn="Id_Tipo" DataSetColumn="Id_Tipo" />
+              <Mapping SourceColumn="Tipo_de_orden_descripcion" DataSetColumn="Tipo_de_orden_descripcion" />
+              <Mapping SourceColumn="Id_Condiciones" DataSetColumn="Id_Condiciones" />
+              <Mapping SourceColumn="Condiciones_Descripcion" DataSetColumn="Condiciones_Descripcion" />
+              <Mapping SourceColumn="Subtotal" DataSetColumn="Subtotal" />
+              <Mapping SourceColumn="Descuento" DataSetColumn="Descuento" />
+              <Mapping SourceColumn="Recargo" DataSetColumn="Recargo" />
+              <Mapping SourceColumn="Impuestos" DataSetColumn="Impuestos" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="Id_Estatus" DataSetColumn="Id_Estatus" />
+              <Mapping SourceColumn="Estatus_Descripcion" DataSetColumn="Estatus_Descripcion" />
+              <Mapping SourceColumn="SecuenciaEditable" DataSetColumn="SecuenciaEditable" />
+              <Mapping SourceColumn="IdEditable" DataSetColumn="IdEditable" />
+              <Mapping SourceColumn="Secuencia_Gobierno" DataSetColumn="Secuencia_Gobierno" />
+              <Mapping SourceColumn="Comentario" DataSetColumn="Comentario" />
+              <Mapping SourceColumn="Id_Producto" DataSetColumn="Id_Producto" />
+              <Mapping SourceColumn="Detalles_Descripcion" DataSetColumn="Detalles_Descripcion" />
+              <Mapping SourceColumn="Cantidad" DataSetColumn="Cantidad" />
+              <Mapping SourceColumn="Precio" DataSetColumn="Precio" />
+              <Mapping SourceColumn="Impuesto" DataSetColumn="Impuesto" />
+              <Mapping SourceColumn="Monto" DataSetColumn="Monto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MD_MVCDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MD_MVCDataSet" msprop:Generator_UserDSName="MD_MVCDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_Orden_Completa" msprop:Generator_TableClassName="v_Orden_CompletaDataTable" msprop:Generator_TableVarName="tablev_Orden_Completa" msprop:Generator_TablePropName="v_Orden_Completa" msprop:Generator_RowDeletingName="v_Orden_CompletaRowDeleting" msprop:Generator_RowChangingName="v_Orden_CompletaRowChanging" msprop:Generator_RowEvHandlerName="v_Orden_CompletaRowChangeEventHandler" msprop:Generator_RowDeletedName="v_Orden_CompletaRowDeleted" msprop:Generator_UserTableName="v_Orden_Completa" msprop:Generator_RowChangedName="v_Orden_CompletaRowChanged" msprop:Generator_RowEvArgName="v_Orden_CompletaRowChangeEvent" msprop:Generator_RowClassName="v_Orden_CompletaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Orden_Id" msprop:Generator_ColumnVarNameInTable="columnOrden_Id" msprop:Generator_ColumnPropNameInRow="Orden_Id" msprop:Generator_ColumnPropNameInTable="Orden_IdColumn" msprop:Generator_UserColumnName="Orden_Id" type="xs:int" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" />
+              <xs:element name="Id_Persona" msprop:Generator_ColumnVarNameInTable="columnId_Persona" msprop:Generator_ColumnPropNameInRow="Id_Persona" msprop:Generator_ColumnPropNameInTable="Id_PersonaColumn" msprop:Generator_UserColumnName="Id_Persona" type="xs:int" minOccurs="0" />
+              <xs:element name="Nombre_Completo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombre_Completo" msprop:Generator_ColumnPropNameInRow="Nombre_Completo" msprop:Generator_ColumnPropNameInTable="Nombre_CompletoColumn" msprop:Generator_UserColumnName="Nombre_Completo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Persona_Tipo_descripcion" msprop:Generator_ColumnVarNameInTable="columnPersona_Tipo_descripcion" msprop:Generator_ColumnPropNameInRow="Persona_Tipo_descripcion" msprop:Generator_ColumnPropNameInTable="Persona_Tipo_descripcionColumn" msprop:Generator_UserColumnName="Persona_Tipo_descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Tipo" msprop:Generator_ColumnVarNameInTable="columnId_Tipo" msprop:Generator_ColumnPropNameInRow="Id_Tipo" msprop:Generator_ColumnPropNameInTable="Id_TipoColumn" msprop:Generator_UserColumnName="Id_Tipo" type="xs:int" />
+              <xs:element name="Tipo_de_orden_descripcion" msprop:Generator_ColumnVarNameInTable="columnTipo_de_orden_descripcion" msprop:Generator_ColumnPropNameInRow="Tipo_de_orden_descripcion" msprop:Generator_ColumnPropNameInTable="Tipo_de_orden_descripcionColumn" msprop:Generator_UserColumnName="Tipo_de_orden_descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Condiciones" msprop:Generator_ColumnVarNameInTable="columnId_Condiciones" msprop:Generator_ColumnPropNameInRow="Id_Condiciones" msprop:Generator_ColumnPropNameInTable="Id_CondicionesColumn" msprop:Generator_UserColumnName="Id_Condiciones" type="xs:unsignedByte" />
+              <xs:element name="Condiciones_Descripcion" msprop:Generator_ColumnVarNameInTable="columnCondiciones_Descripcion" msprop:Generator_ColumnPropNameInRow="Condiciones_Descripcion" msprop:Generator_ColumnPropNameInTable="Condiciones_DescripcionColumn" msprop:Generator_UserColumnName="Condiciones_Descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Subtotal" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_UserColumnName="Subtotal" type="xs:decimal" />
+              <xs:element name="Descuento" msprop:Generator_ColumnVarNameInTable="columnDescuento" msprop:Generator_ColumnPropNameInRow="Descuento" msprop:Generator_ColumnPropNameInTable="DescuentoColumn" msprop:Generator_UserColumnName="Descuento" type="xs:decimal" />
+              <xs:element name="Recargo" msprop:Generator_ColumnVarNameInTable="columnRecargo" msprop:Generator_ColumnPropNameInRow="Recargo" msprop:Generator_ColumnPropNameInTable="RecargoColumn" msprop:Generator_UserColumnName="Recargo" type="xs:decimal" />
+              <xs:element name="Impuestos" msprop:Generator_ColumnVarNameInTable="columnImpuestos" msprop:Generator_ColumnPropNameInRow="Impuestos" msprop:Generator_ColumnPropNameInTable="ImpuestosColumn" msprop:Generator_UserColumnName="Impuestos" type="xs:decimal" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" />
+              <xs:element name="Id_Estatus" msprop:Generator_ColumnVarNameInTable="columnId_Estatus" msprop:Generator_ColumnPropNameInRow="Id_Estatus" msprop:Generator_ColumnPropNameInTable="Id_EstatusColumn" msprop:Generator_UserColumnName="Id_Estatus" type="xs:int" minOccurs="0" />
+              <xs:element name="Estatus_Descripcion" msprop:Generator_ColumnVarNameInTable="columnEstatus_Descripcion" msprop:Generator_ColumnPropNameInRow="Estatus_Descripcion" msprop:Generator_ColumnPropNameInTable="Estatus_DescripcionColumn" msprop:Generator_UserColumnName="Estatus_Descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecuenciaEditable" msprop:Generator_ColumnVarNameInTable="columnSecuenciaEditable" msprop:Generator_ColumnPropNameInRow="SecuenciaEditable" msprop:Generator_ColumnPropNameInTable="SecuenciaEditableColumn" msprop:Generator_UserColumnName="SecuenciaEditable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdEditable" msprop:Generator_ColumnVarNameInTable="columnIdEditable" msprop:Generator_ColumnPropNameInRow="IdEditable" msprop:Generator_ColumnPropNameInTable="IdEditableColumn" msprop:Generator_UserColumnName="IdEditable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Secuencia_Gobierno" msprop:Generator_ColumnVarNameInTable="columnSecuencia_Gobierno" msprop:Generator_ColumnPropNameInRow="Secuencia_Gobierno" msprop:Generator_ColumnPropNameInTable="Secuencia_GobiernoColumn" msprop:Generator_UserColumnName="Secuencia_Gobierno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comentario" msprop:Generator_ColumnVarNameInTable="columnComentario" msprop:Generator_ColumnPropNameInRow="Comentario" msprop:Generator_ColumnPropNameInTable="ComentarioColumn" msprop:Generator_UserColumnName="Comentario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Producto" msprop:Generator_ColumnVarNameInTable="columnId_Producto" msprop:Generator_ColumnPropNameInRow="Id_Producto" msprop:Generator_ColumnPropNameInTable="Id_ProductoColumn" msprop:Generator_UserColumnName="Id_Producto" type="xs:int" />
+              <xs:element name="Detalles_Descripcion" msprop:Generator_ColumnVarNameInTable="columnDetalles_Descripcion" msprop:Generator_ColumnPropNameInRow="Detalles_Descripcion" msprop:Generator_ColumnPropNameInTable="Detalles_DescripcionColumn" msprop:Generator_UserColumnName="Detalles_Descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" />
+              <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:decimal" />
+              <xs:element name="Impuesto" msprop:Generator_ColumnVarNameInTable="columnImpuesto" msprop:Generator_ColumnPropNameInRow="Impuesto" msprop:Generator_ColumnPropNameInTable="ImpuestoColumn" msprop:Generator_UserColumnName="Impuesto" type="xs:decimal" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_Orden_Completa" />
+      <xs:field xpath="mstns:Orden_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

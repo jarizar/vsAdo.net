@@ -1,0 +1,135 @@
+﻿<div class="modal fade" id="ModalGraficos">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Resumen de Movimientos</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-left" id="tipos_de_persona" style="width: 450px; height: 250px;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-right" id="estatus_de_personas" style="width: 450px; height: 250px;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="tipos_de_orden"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="condiciones_de_ordenes"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-left" id="tipos_de_productos" style="width: 450px; height: 250px;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-right" id="impuestos_de_productos" style="width: 450px; height: 250px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Uso de los gráficos*@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(@Html.Action("TiposDePersonasRegistradas", "Home"));
+
+            var options = { title: 'Tipos de Persona', 'width': 400, 'height': 300, is3D: true  };
+
+            var chart = new google.visualization.PieChart(document.getElementById('tipos_de_persona'));
+
+            chart.draw(data, options);
+        }
+</script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(@Html.Action("EstatusDePersonas", "Home"));
+
+            var options = { title: 'Estatus de Persona', 'width': 400, 'height': 300, is3D: true };
+
+            var chart = new google.visualization.PieChart(document.getElementById('estatus_de_personas'));
+
+            chart.draw(data, options);
+        }
+</script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(@Html.Action("OrdenesPorTipo", "Home"));
+
+            var options = { title: 'Tipos de Ordenes', 'width': 400, 'height': 300, pieHole: 0.4, };
+
+            var chart = new google.visualization.PieChart(document.getElementById('tipos_de_orden'));
+
+            chart.draw(data, options);
+        }
+</script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(@Html.Action("CondicionesDeOrdenes", "Home"));
+
+            var options = { title: 'Condiciones de Ordenes', 'width': 400, 'height': 300, pieHole: 0.4, };
+
+            var chart = new google.visualization.PieChart(document.getElementById('condiciones_de_ordenes'));
+
+            chart.draw(data, options);
+        }
+</script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(@Html.Action("TiposDeProductos", "Home"));
+
+            var options = { title: 'Tipos de Productos', 'width': 400, 'height': 300 };
+
+            var chart = new google.visualization.PieChart(document.getElementById('tipos_de_productos'));
+
+            chart.draw(data, options);
+        }
+</script>
+
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(@Html.Action("ImpuestosDeProductos", "Home"));
+
+            var options = { title: 'Impuestos de Productos', 'width': 400, 'height': 300 };
+
+            var chart = new google.visualization.PieChart(document.getElementById('impuestos_de_productos'));
+
+            chart.draw(data, options);
+        }
+</script>

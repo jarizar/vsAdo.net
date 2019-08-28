@@ -328,5 +328,61 @@
         });
         $("#condiciones").val("").trigger("change");
     </script>
+
+    @{
+        List<Modelos.v_Persona> personas = new List<Modelos.v_Persona>();
+        List<Modelos.Orden_Tipo> tipos_de_orden = new List<Modelos.Orden_Tipo>();
+        List<Modelos.Condiciones> condiciones = new List<Modelos.Condiciones>();
+        List<Modelos.v_Producto> productos = new List<Modelos.v_Producto>();
+        List<Modelos.v_Orden> ordenes = new List<Modelos.v_Orden>();
+
+        Modelos.MD_MVCEntities contexto = new Modelos.MD_MVCEntities();
+        using (RepositorioGenerico.Repositorio<Modelos.v_Persona> p =
+        new RepositorioGenerico.Repositorio<Modelos.v_Persona>(contexto))
+        {
+            personas = p.All();
+        }
+        //Para los tipos de ordenes
+        contexto = new Modelos.MD_MVCEntities();
+        using (RepositorioGenerico.Repositorio<Modelos.Orden_Tipo> p =
+        new RepositorioGenerico.Repositorio<Modelos.Orden_Tipo>(contexto))
+        {
+            tipos_de_orden = p.All();
+        }
+        //Para las condiciones
+        contexto = new Modelos.MD_MVCEntities();
+        using (RepositorioGenerico.Repositorio<Modelos.Condiciones> p =
+            new RepositorioGenerico.Repositorio<Modelos.Condiciones>(contexto))
+        {
+            condiciones = p.All();
+        }
+        //Para los productos
+        contexto = new Modelos.MD_MVCEntities();
+        using (RepositorioGenerico.Repositorio<Modelos.v_Producto> p =
+            new RepositorioGenerico.Repositorio<Modelos.v_Producto>(contexto))
+        {
+            productos = p.All();
+        }
+        //Para las ordenes
+        contexto = new Modelos.MD_MVCEntities();
+        using (RepositorioGenerico.Repositorio<Modelos.v_Orden> p =
+            new RepositorioGenerico.Repositorio<Modelos.v_Orden>(contexto))
+        {
+            ordenes = p.All();
+        }
+    }
+
+    @Html.Partial("_crear_persona", personas)
+
+    @Html.Partial("_crear_tipo_de_orden", tipos_de_orden)
+
+    @Html.Partial("_crear_condiciones", condiciones)
+
+    @Html.Partial("_crear_producto", productos)
+
+    @Html.Partial("_listado_de_ordenes", ordenes)
+
+    @Html.Partial("_resumen_grafico")
+
 </body>
 </html>

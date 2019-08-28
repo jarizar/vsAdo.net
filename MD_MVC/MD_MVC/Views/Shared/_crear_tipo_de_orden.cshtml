@@ -1,0 +1,108 @@
+﻿@model List<Modelos.Orden_Tipo>
+<div class="modal fade" id="ModalTipoDeOrden">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Crear Tipo de Orden</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Descripción:</label>
+                        <input type="text" name="descripcion_tipo_de_orden" id="descripcion_tipo_de_orden" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="id_table_tipos_de_orden" class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Descripción</th>
+                                    <th>Secuencia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var tipo in Model)
+                                {
+                                    <tr>
+                                        <td>@tipo.Id</td>
+                                        <td class="edit" id="@tipo.Id" data-propertyname="Descripcion">@tipo.Descripcion</td>
+                                        <td class="edit" id="@tipo.Id" data-propertyname="Secuencia">@tipo.Secuencia</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button id="btn_agregar_tipo_de_orden" type="button" class="btn btn-primary">Insertar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#btn_agregar_tipo_de_orden").click(function (event) {
+            //Validamos algunos datos
+            if ($("#descripcion_tipo_de_orden").val() == "") {
+                swal({ title: "La descripción es obligatoria", type: "info", animation: false, customClass: 'animated zoomIn' });
+                $("#descripcion_tipo_de_orden").focus();
+                return resultado;
+            }
+
+            //Preguntamos si desea continuar
+            swal({ title: "Desea continuar?", type: "question", animation: false, showCancelButton: true, customClass: "animated zoomIn" }).then((result) => {
+                if (result.value) {
+                    //Realizamos la inserción a la DB
+                    var datos = { descripcion: $("#descripcion_tipo_de_orden").val() };
+                    $.ajax({
+                        url: "/Home/GuardarTipoDeOrden",
+                        method: "POST",
+                        data: datos,
+                        success: function (result) {
+                            if (result.resultado) {
+                                //Limpiamos el formulario para cargar los nuevos datos
+                                window.location.href = "";
+                            }
+                            else {
+                                swal("Error", "Error al insertar registro", "error");
+                            }
+                        },
+                        error: function () {
+                            swal("Error", "Error en la petición al servidor", "error");
+                        }
+                    });
+                }
+            });
+        });
+
+        //Aplicamos el DataTable
+        var tablaTipoOrden=$("#id_table_tipos_de_orden").dataTable();
+
+        //Habilitamos la edición en línea
+        tablaTipoOrden.$(".edit").editable("/Home/ActualizarTipoDeOrden", {
+            submitdata: function () {
+                return {
+                    PropertyName: $(this).data("propertyname")
+                }
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+    })
+</script>

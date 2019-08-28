@@ -1,0 +1,211 @@
+﻿@model List<Modelos.v_Producto>
+<div class="modal fade" id="ModalCrearProducto">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Crear Producto</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-9">
+                        <label>Tipo:</label><br />
+                        <select name="tipo_producto" id="tipo_producto" class="form-control" style="width:280px"></select>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>Código:</label>
+                        <input type="text" name="codigo_producto" id="codigo_producto" value="" class="form-control text-center" />
+                    </div>
+                    <div class="col-md-9">
+                        <label>Descripción:</label>
+                        <input type="text" name="descripcion_producto" id="descripcion_producto" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>Precio:</label>
+                        <input type="text" name="precio_producto" id="precio_producto" value="0.00" class="form-control text-right" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>Cantidad:</label>
+                        <input type="text" name="cantidad_producto" id="cantidad_producto" value="0.00" class="form-control text-right" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>Costo:</label>
+                        <input type="text" name="costo_producto" id="costo_producto" value="0.00" class="form-control text-right" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>Impuesto:</label><br />
+                        <select name="impuesto_producto" id="impuesto_producto" class="form-control"></select>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="id_table_productos" class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Descripción</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Impuesto</th>
+                                    <th>Tipo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var producto in Model)
+                                {
+                                    <tr>
+                                        <td class="editProducto" id="@producto.Id" data-propertyname="Codigo">@producto.Codigo</td>
+                                        <td class="editProducto" id="@producto.Id" data-propertyname="Descripcion">@producto.Descripcion</td>
+                                        <td class="text-right editProducto" id="@producto.Id" data-propertyname="Cantidad">@Html.FormatValue(producto.Cantidad, "{0:N2}")</td>
+                                        <td class="text-right editProducto" id="@producto.Id" data-propertyname="Precio">@Html.FormatValue(producto.Precio, "{0:N2}")</td>
+                                        <td class="text-right editProducto-Impuesto" id="@producto.Id" data-propertyname="Id_Impuesto">@Html.FormatValue(producto.Tasa, "{0:N2}")</td>
+                                        <td class="editProducto-Tipo" id="@producto.Id" data-propertyname="Id_Tipo">@producto.Tipo_Descripcion</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button id="btn_crear_producto" type="button" class="btn btn-primary">Insertar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#btn_crear_producto").click(function (event) {
+            //Validamos algunas cosas :p
+            if ($("#tipo_producto").val() == null) {
+                swal("Error", "El tipo del producto es obligatorio", "error");
+                return;
+            }
+            if ($("#codigo_producto").val() == "") {
+                swal("Error", "El código del producto es obligatorio", "error");
+                return;
+            }
+            if ($("#descripcion_producto").val() == "") {
+                swal("Error", "La descripción del producto es obligatoria", "error");
+                return;
+            }
+            if ($("#impuesto_producto").val() == null) {
+                swal("Error", "El impuesto del producto es obligatorio", "error");
+                return;
+            }
+            //Preguntamos si desea continuar
+            swal({ title: "Desea continuar?", type: "question", animation: false, showCancelButton: true, customClass: "animated zoomIn" }).then((result) => {
+                if (result.value) {
+                    //Realizamos la inserción a la DB
+                    var datos = {tipo: $("#tipo_producto").val(), codigo: $("#codigo_producto").val(), descripcion: $("#descripcion_producto").val(), precio: $("#precio_producto").val(), cantidad: $("#cantidad_producto").val(), costo: $("#costo_producto").val(), tasa: $("#impuesto_producto").val() };
+                    $.ajax({
+                        url: "/Home/GuardarProducto",
+                        method: "POST",
+                        data: datos,
+                        success: function (result) {
+                            if (result.resultado) {
+                                //Limpiamos el formulario para cargar los nuevos datos
+                                window.location.href = "";
+                            }
+                            else {
+                                swal("Error", "Error al insertar registro", "error");
+                            }
+                        },
+                        error: function () {
+                            swal("Error", "Error en la petición al servidor", "error");
+                        }
+                    });
+                }
+            });
+        });
+
+        //Aplicamos el DataTable
+        var tablaProductos=$("#id_table_productos").dataTable();
+
+        //Datos de Tipos de Producto
+        var datos = @Html.Action("TipoDeProducto");
+        $("#tipo_producto").select2({
+            placeholder: "Seleccione",
+            data: datos,
+        });
+        $("#tipo_producto").val("").trigger("change");
+
+        //Datos de Impuestos
+        var datos1 = @Html.Action("TipoDeImpuesto");
+        $("#impuesto_producto").select2({
+            placeholder: "Seleccione",
+            data: datos1,
+        });
+        $("#impuesto_producto").val("").trigger("change");
+
+        //Habilitamos la edición en línea
+        tablaProductos.$(".editProducto").editable("/Home/ActualizarProducto", {
+            submitdata: function () {
+                return {
+                    PropertyName: $(this).data("propertyname")
+                }
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+        tablaProductos.$(".editProducto-Tipo").editable("/Home/ActualizarProducto", {
+            data: @Html.Action("Producto_Tipo_OrdenJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+        tablaProductos.$(".editProducto-Impuesto").editable("/Home/ActualizarProducto", {
+            data: @Html.Action("Impuestos_OrdenJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+    })
+</script>

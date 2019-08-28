@@ -1,0 +1,137 @@
+﻿@model List<Modelos.v_Orden>
+<div class="modal fade" id="ModalOrdenes">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Listado de Ordenes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="id_table_ordenes" class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Fecha</th>
+                                    <th>Persona</th>
+                                    <th>Tipo</th>
+                                    <th>Condiciones</th>
+                                    <th>Subtotal</th>
+                                    <th>Impuestos</th>
+                                    <th>Total</th>
+                                    <th>Estatus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var orden in Model)
+                                {
+                                    <tr>
+                                        <td>@orden.Orden_Id</td>
+                                        <td class="editOrden" id="@orden.Orden_Id" data-propertyname="Fecha">@Html.FormatValue(orden.Fecha, "{0:d}")</td>
+                                        <td>@orden.Nombre_Completo</td>
+                                        <td class="editOrden-Tipo" id="@orden.Orden_Id" data-propertyname="Id_Tipo">@orden.Tipo_de_orden_descripcion</td>
+                                        <td class="editOrden-Condiciones" id="@orden.Orden_Id" data-propertyname="Id_Condiciones">@orden.Condiciones_Descripcion</td>
+                                        <td class="text-right">@Html.FormatValue(orden.Subtotal, "{0:N2}")</td>
+                                        <td class="text-right">@Html.FormatValue(orden.Impuestos, "{0:N2}")</td>
+                                        <td class="text-right">@Html.FormatValue(orden.Total, "{0:N2}")</td>
+                                        <td class="editOrden-Estatus" id="@orden.Orden_Id" data-propertyname="Id_Estatus">@orden.Estatus_Descripcion</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var tablaOrdenes=$("#id_table_ordenes").dataTable();
+
+        tablaOrdenes.$(".editOrden").editable("/Home/ActualizarOrden", {
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+
+        tablaOrdenes.$(".editOrden-Tipo").editable("/Home/ActualizarOrden", {
+            data: @Html.Action("Tipos_OrdenJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+        tablaOrdenes.$(".editOrden-Condiciones").editable("/Home/ActualizarOrden", {
+            data: @Html.Action("CondicionesJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+        tablaOrdenes.$(".editOrden-Estatus").editable("/Home/ActualizarOrden", {
+            data: @Html.Action("EstatusJSON", "Home"),
+            type: 'select',
+            submit: "Ok",
+            cancel: "Cancel",
+            submitcssclass: 'btn btn-success',
+            cancelcssclass: 'btn btn-danger',
+            submitdata: function () {
+                return { PropertyName: $(this).data("propertyname") };
+            },
+            //Función para poder recibir el nuevo valor y mostrarlo
+            callback: function (value, settings) {
+                var jsonData = $.parseJSON(value);
+                if (jsonData.status) {
+                    $(this).text(jsonData.value);
+                }
+                else {
+                    $(this).text(jsonData.mensaje);
+                }
+            }
+        });
+    });
+</script>

@@ -22,3 +22,15 @@ C:\Users\kenlly.acosta\Desktop\RepositorioGenerico\obj\Debug\RepositorioGenerico
 C:\Users\kenlly.acosta\Desktop\RepositorioGenerico\obj\Debug\RepositorioGenerico.csproj.CopyComplete
 C:\Users\kenlly.acosta\Desktop\RepositorioGenerico\obj\Debug\RepositorioGenerico.dll
 C:\Users\kenlly.acosta\Desktop\RepositorioGenerico\obj\Debug\RepositorioGenerico.pdb
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\RepositorioGenerico.dll.config
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\RepositorioGenerico.dll
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\RepositorioGenerico.pdb
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\EntityFramework.dll
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\EntityFramework.xml
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\obj\Debug\RepositorioGenerico.csprojAssemblyReference.cache
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\obj\Debug\RepositorioGenerico.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\obj\Debug\RepositorioGenerico.csproj.CopyComplete
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\obj\Debug\RepositorioGenerico.dll
+C:\Users\jose antonio\source\repos\MD_MVC\RepositorioGenerico\obj\Debug\RepositorioGenerico.pdb
