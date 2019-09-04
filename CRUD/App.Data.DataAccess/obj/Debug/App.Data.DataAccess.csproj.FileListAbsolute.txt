@@ -1,0 +1,14 @@
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\App.Entities.Base.dll
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\App.Entities.Base.pdb
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Users\jose antonio\source\repos\CRUD\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb

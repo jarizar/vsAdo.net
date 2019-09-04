@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBContext.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ID_Cliente" />
+    </Key>
+    <Property Name="ID_Cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Completo" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="NroDocumento" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Id_TipoDocumento" Type="int" Nullable="false" />
+    <Property Name="Id_Estatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Detalle_Orden">
+    <Key>
+      <PropertyRef Name="Id_OrdenDetalle" />
+    </Key>
+    <Property Name="Id_OrdenDetalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Orden" Type="int" Nullable="false" />
+    <Property Name="Id_Producto" Type="int" Nullable="false" />
+    <Property Name="Unidad_Medida" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="Precio" Type="numeric" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="SubTotal" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="IGV" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Importe" Type="numeric" Precision="18" Scale="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estatus">
+    <Key>
+      <PropertyRef Name="Id_Estatus" />
+    </Key>
+    <Property Name="Id_Estatus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Moneda">
+    <Key>
+      <PropertyRef Name="Id_Moneda" />
+    </Key>
+    <Property Name="Id_Moneda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Orden">
+    <Key>
+      <PropertyRef Name="Id_Orden" />
+    </Key>
+    <Property Name="Id_Orden" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_TipoComprobante" Type="int" />
+    <Property Name="Id_Cliente" Type="int" />
+    <Property Name="Serie" Type="nvarchar" MaxLength="4" />
+    <Property Name="Numero" Type="nvarchar" MaxLength="6" />
+    <Property Name="Fecha_Emision" Type="datetime" />
+    <Property Name="Id_Moneda" Type="int" />
+    <Property Name="SubTotal" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="IGV" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Total" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Observacion" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Id_Producto" />
+    </Key>
+    <Property Name="Id_Producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_ProductoTipo" Type="int" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Precio" Type="numeric" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="Stock" Type="int" Nullable="false" />
+    <Property Name="Unidad_Medida" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Producto_Tipo">
+    <Key>
+      <PropertyRef Name="Id_ProductoTipo" />
+    </Key>
+    <Property Name="Id_ProductoTipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tipo_Comprobante">
+    <Key>
+      <PropertyRef Name="Id_TipoComprobante" />
+    </Key>
+    <Property Name="Id_TipoComprobante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tipo_Documento">
+    <Key>
+      <PropertyRef Name="ID_TipoDocumento" />
+    </Key>
+    <Property Name="ID_TipoDocumento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionCorto" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DescripcionLarga" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Cliente_Estatus">
+    <End Role="Estatus" Type="Self.Estatus" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estatus">
+        <PropertyRef Name="Id_Estatus" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Id_Estatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cliente_TipoDocumeto">
+    <End Role="Tipo_Documento" Type="Self.Tipo_Documento" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Documento">
+        <PropertyRef Name="ID_TipoDocumento" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Id_TipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Orden_Orden">
+    <End Role="Orden" Type="Self.Orden" Multiplicity="1" />
+    <End Role="Detalle_Orden" Type="Self.Detalle_Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orden">
+        <PropertyRef Name="Id_Orden" />
+      </Principal>
+      <Dependent Role="Detalle_Orden">
+        <PropertyRef Name="Id_Orden" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Orden_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="Detalle_Orden" Type="Self.Detalle_Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Id_Producto" />
+      </Principal>
+      <Dependent Role="Detalle_Orden">
+        <PropertyRef Name="Id_Producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orden_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Orden" Type="Self.Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="Orden">
+        <PropertyRef Name="Id_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orden_Moneda">
+    <End Role="Moneda" Type="Self.Moneda" Multiplicity="0..1" />
+    <End Role="Orden" Type="Self.Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Moneda">
+        <PropertyRef Name="Id_Moneda" />
+      </Principal>
+      <Dependent Role="Orden">
+        <PropertyRef Name="Id_Moneda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orden_TipoComprobante">
+    <End Role="Tipo_Comprobante" Type="Self.Tipo_Comprobante" Multiplicity="0..1" />
+    <End Role="Orden" Type="Self.Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Comprobante">
+        <PropertyRef Name="Id_TipoComprobante" />
+      </Principal>
+      <Dependent Role="Orden">
+        <PropertyRef Name="Id_TipoComprobante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Producto_Producto_Tipo">
+    <End Role="Producto_Tipo" Type="Self.Producto_Tipo" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto_Tipo">
+        <PropertyRef Name="Id_ProductoTipo" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="Id_ProductoTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBContextStoreContainer">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Detalle_Orden" EntityType="Self.Detalle_Orden" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estatus" EntityType="Self.Estatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Moneda" EntityType="Self.Moneda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orden" EntityType="Self.Orden" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto_Tipo" EntityType="Self.Producto_Tipo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tipo_Comprobante" EntityType="Self.Tipo_Comprobante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tipo_Documento" EntityType="Self.Tipo_Documento" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Cliente_Estatus" Association="Self.FK_Cliente_Estatus">
+      <End Role="Estatus" EntitySet="Estatus" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cliente_TipoDocumeto" Association="Self.FK_Cliente_TipoDocumeto">
+      <End Role="Tipo_Documento" EntitySet="Tipo_Documento" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Orden_Orden" Association="Self.FK_Detalle_Orden_Orden">
+      <End Role="Orden" EntitySet="Orden" />
+      <End Role="Detalle_Orden" EntitySet="Detalle_Orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Orden_Producto" Association="Self.FK_Detalle_Orden_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Detalle_Orden" EntitySet="Detalle_Orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orden_Cliente" Association="Self.FK_Orden_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Orden" EntitySet="Orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orden_Moneda" Association="Self.FK_Orden_Moneda">
+      <End Role="Moneda" EntitySet="Moneda" />
+      <End Role="Orden" EntitySet="Orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orden_TipoComprobante" Association="Self.FK_Orden_TipoComprobante">
+      <End Role="Tipo_Comprobante" EntitySet="Tipo_Comprobante" />
+      <End Role="Orden" EntitySet="Orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Producto_Producto_Tipo" Association="Self.FK_Producto_Producto_Tipo">
+      <End Role="Producto_Tipo" EntitySet="Producto_Tipo" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

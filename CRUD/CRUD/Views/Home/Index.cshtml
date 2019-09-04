@@ -1,0 +1,405 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Maestro Detalle</title>
+    <link href="~/Content/uikit.css" rel="stylesheet" />
+    <link href="~/Content/select2.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="uk-container uk-container-center" id="epn_container">
+        <div class="menu__top">
+            <ul class="menu" data-uk-switcher="{connect:'#my-id', animation: 'uk-animation-fade, uk-animation-slide-left'}">
+                <li aria-expanded="true" class="uk-active">
+                    <a href="">
+                        Inicio
+                    </a>
+                </li>
+                <li aria-expanded="false" class="">
+                    <a href="">
+                        Formatos
+                    </a>
+                </li>
+                <li aria-expanded="false" class="">
+                    <a href="">
+                        Reportes
+                    </a>
+                </li>
+            </ul>
+            <!-- This is the container of the content items -->
+            <ul id="my-id" class="uk-switcher">
+                <li aria-hidden="false" class="uk-active" style="animation-duration: 200ms;">
+                    <div class="uk-btn-group">
+                        
+                        <a id="btn_guardar">
+                            <i class="uk-icon-large uk-icon-save">
+                            </i><br>Guardar
+                        </a>
+                        <a href="#" id="btn_nuevo">
+                            <i class="uk-icon-large uk-icon-file-o">
+                            </i><br>Nuevo Cliente
+                        </a>
+                        <a href="#" id="btn_cancel">
+                            <i class="uk-icon-large uk-icon-cube">
+                            </i><br>Nuevo Producto
+                        </a>                        
+                        <a href="#" id="btn_listado" data-toggle="modal" data-target="#ModalFacturas">
+                            <i class="uk-icon-large uk-icon-list-ul">
+                            </i><br>
+                            Listado
+                        </a>                       
+                    </div>
+                </li>
+                <li aria-hidden="true" class="" style="animation-duration: 200ms;">
+                    <div class="uk-btn-group">
+                        <a href="#" id="btn_imprimir_pos">
+                            <i class="uk-icon-large uk-icon-print">
+                            </i><br>
+                            POS
+                        </a>
+                        <a href="#" id="btn_imprimir_media_carta">
+                            <i class="uk-icon-large uk-icon-print">
+                            </i><br>
+                            Med. Cart
+                        </a>
+                        <a href="#" id="btn_imprimir_carta">
+                            <i class="uk-icon-large uk-icon-print">
+                            </i><br>
+                            Carta
+                        </a>
+                    </div>
+                </li>
+                <li aria-hidden="true" class="" style="animation-duration: 200ms;">
+                    <div class="uk-btn-group">
+                        <a href="#" id="btn_resumen">
+                            <i class="uk-icon-large uk-icon-bar-chart">
+                            </i><br>
+                            Resumen
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <section id="uk-top-a" class="bg__top_a">
+            <div class="uk-clearfix">
+                <div class="uk-float-left">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="uk-margin-left">
+                                    <label class="uk-label color-white">
+                                        <a class="uk-icon-hover uk-icon-file-archive-o"></a>
+                                        Tipo de comprobante
+                                    </label>
+                                </div>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="uk-margin-left">                                   
+                                    <select id="cbxTipoComprobante" class="form-control" style="width:200px;">
+                                       <option value="">- seleccione -</option>
+                                        
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                
+                <div class="uk-float-right">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-label color-white">
+                                            <a class="uk-icon-hover uk-icon-barcode"></a>
+                                            Serie
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-label color-white">
+                                            <a class="uk-icon-hover uk-icon-file-text-o"></a>
+                                            Número
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-label color-white">
+                                            <a class="uk-icon-hover uk-icon-calendar"></a>
+                                            Fecha
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-label color-white">
+                                            <a class="uk-icon-hover uk-icon-money"></a>
+                                            Moneda
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <input type="text" id="serie_Doc" class="form-control" style="width:80px">
+                                    </div>
+                                </td>
+                            
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <input type="text" id="numero_Doc" class="form-control" style="width:140px">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <div class="uk-form-icon">
+                                            <i class="uk-icon-calendar">
+                                            </i>
+                                            <input id="txt_fecha" class="form-control" type="date" name="txt_fecha" placeholder="01/01/2020" data-uk-datepicker="{format:'DD/MM/YYYY'}">
+                                        </div>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <select name="FormaPago" id="FormaPago" class="form-control" style="width:160px;">
+                                            @*Aquí se llena automático desde el servidor por Java Script*@
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+
+            </div>
+</section>
+        <br />
+        <section id="uk-top-b">
+            <fieldset class="content-group">
+                <legend class="text-bold">Cliente: </legend>
+
+                <div class="uk-grid uk-grid-medium uk-margin-top" data-uk-grid-margin="">
+                    <div class="uk-width-medium-7-10 uk-width-small-1-2 uk-row-first">
+                        <!--LEFT-->
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-text-small">
+                                            <a class="uk-icon-hover uk-icon-user"></a>
+                                            Tipo de Documento
+                                        </label>                                        
+                                        <select name="FormaPago" id="Tipo_documento" class="form-control" style="width:150px;">
+                                            @*Aquí se llena automático desde el servidor por Java Script*@
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-text-small">
+                                            <a class="uk-icon-hover uk-icon-user"></a>
+                                            N° de Documento
+                                        </label>
+                                        <input type="text" id="Numero_Documento" class="form-control" style="width:180px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left" style="height:5px">
+                                        <a id="btn_buscar_cliente" href="#" data-toggle="modal" data-target="#ModalBuscarCliente">
+                                            <i class="uk-icon-small uk-icon-search"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="uk-margin-left">
+                                        <label class="uk-text-small">
+                                            <a class="uk-icon-hover uk-icon-id-card"></a>
+                                            Nombre del cliente
+                                        </label>
+                                        <input type="text" id="Nombre_Cliente" class="form-control" style="width:250px;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+
+                                    <div class="uk-margin-left">
+                                        <label class="uk-text-small">
+                                            <a class="uk-icon-hover uk-icon-home"></a>
+                                            Dirección
+                                        </label>
+                                        <input type="text" id="nombre_cliente" class="form-control">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                  
+                </div>
+            </fieldset>
+        </section>
+        <br />
+        <section class="uk-margin-top">
+            <fieldset class="content-group">
+                <legend class="text-bold">Detalles: </legend>
+                <table>
+                    <tr>
+                        <td>
+
+                            <div class="uk-margin-left">
+                                <label class="uk-text-small">
+                                    <a class="uk-icon-hover uk-icon-folder-open"></a>
+                                    Categoría
+                                </label>
+                                <input type="text" id="Categoria" class="form-control">
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="uk-margin-left">
+                                <label class="uk-text-small">
+                                    <a class="uk-icon-hover uk-icon-list"></a>
+                                    Producto
+                                </label>
+                                <input type="text" id="Producto" class="form-control" style="width:300px">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="uk-margin-left" style="height:5px">
+                                <a id="btn_buscar_producto" href="#" data-toggle="modal" data-target="#ModalBuscarCliente">
+                                    <i class="uk-icon-small uk-icon-search"></i>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="uk-margin-left">
+                                <label class="uk-text-small">
+                                    <a class="uk-icon-hover uk-icon-cubes"></a>
+                                    Cantidad
+                                </label>
+                                <input style="text-align:right; width:150px" type="text" name="Cantidad" id="Cantidad" value="0.00" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="uk-margin-left">
+                                <label class="uk-text-small">
+                                    <a class="uk-icon-hover uk-icon-dollar"></a>
+                                    precio
+                                </label>
+                                <input style="text-align:right; width:150px" type="text" name="Precio" id="Precio" value="0.00" class="form-control" />
+                            </div>
+                        </td>                        
+                        <td>
+                            <div class="uk-margin-left" style="height:10px">
+                                <a href="#" id="btn_agregar_producto">
+                                    <i class="uk-icon-large uk-icon-plus-square-o"></i><br>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+        
+             </fieldset>
+        </section>
+        <section class="uk-margin-top" id="ReferenciaTabla">
+            <table class="table table-striped" id="tablaDetalle">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Código</th>
+                        <th style="width:400px">Descripción</th>
+                        <th>Und/Medida</th>
+                        <th class="text-right">Precio</th>
+                        <th class="text-right">Cantidad</th>
+                        <th class="text-right">Sub. Total</th>
+                        <th class="text-right">IGV</th>
+                        <th class="text-right">Importe</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section class="row uk-margin-bottom">
+            <div class="col-md-6 text-left">
+                <label> <a class="uk-icon-hover uk-icon-book"></a> Observación:</label>
+                <textarea class="form-control" rows="4" cols="30" name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div class="col-md-6 text-right">
+                <fieldset class="content-group">
+                    <legend class="text-bold text-left" >Resumen: </legend>
+                    <div class="uk-subtotal">
+                        <label>Subtotal</label>
+                        <input type="text" readonly="readonly" name="txt_subtotal" id="txt_subtotal" value="0.00" class="text-right" />
+                    </div>
+                    <div class="uk-impuesto">
+                        <label>IGV</label>
+                        <input type="text" readonly="readonly" name="txt_impuestos" id="txt_impuestos" value="0.00" class="text-right" />
+                    </div>
+
+                    <div class="uk-total">
+                        <label>Total</label>
+                        <input type="text" readonly="readonly" name="txt_total" id="txt_total" value="0.00" class="text-right" />
+                    </div>
+                    </fieldset>
+            </div>
+        </section>
+    </div>
+    <div class="loaderbody" id="loaderbody">
+        <div class="loader" id="loader"></div>
+    </div>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/uikit.min.js"></script>
+    <script src="~/Scripts/select2.min.js"></script>
+    <script src="~/Scripts/sweetalert2.all.js"></script>
+    <script src="~/Scripts/modal.js"></script>
+    <script src="~/Scripts/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/Home/Index.js"></script>
+    <script src="~/Scripts/jquery.tabletojson.min.js"></script>
+    <script src="~/Scripts/jquery.jeditable.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+
+                url: '/Home/GetTipoComprobante',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var descripcion = $("#cbxTipoComprobante");
+                    var datos = data.Data;
+                        $(datos).each(function (i, v) {
+                            descripcion.append('<option value="' + v.id + '">' + v.descripcion + '</option>');
+                        });
+                },
+                error: function () {
+                    console.log('err')
+                }
+            });
+
+        })
+
+    </script>
+
+
+</body>
+</html>
